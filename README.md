@@ -14,7 +14,7 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `style.css` | gesamtes Aussehen; Farben für hell und dunkel stehen oben als Variablen |
 | `app.js` | Hell/Dunkel, Laufband, Einblenden, Bilder vergrößern, Download-Knopf |
 | `bilder/` | Favicon und Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
-| `werkzeuge/beispielfotos_zeichnen.py` | zeichnet die sechs „Fotos“ der Beispiel-Zeitreise (siehe unten) |
+| `werkzeuge/commons_suche.py`, `werkzeuge/aufnahmen.ps1` | freie Fotos suchen und Bildschirmfotos aufnehmen (siehe unten) |
 | `CNAME` | eigene Adresse `imagiter.de` für GitHub Pages |
 | `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
 | `werkzeuge/commit_pruefung.py`, `.githooks/` | Prüfung vor jedem Commit (Kopie aus Imagiter, gleich halten) |
@@ -23,13 +23,22 @@ Grundsätze: einfaches HTML/CSS/JavaScript, **nichts von fremden Servern** (kein
 
 ## Beispielbilder
 
-Die Bildschirmfotos zeigen das **echte Programm** mit der **erfundenen** Beispiel-Zeitreise „40 Jahre Anna & Paul“ (`beispiele/hochzeitstag` im Imagiter-Repo). Echte Fotos oder Personen sind nicht dabei.
+Die Bildschirmfotos zeigen das **echte Programm** mit der **erfundenen** Beispiel-Zeitreise „40 Jahre Anna & Paul“ (`beispiele/hochzeitstag` im Imagiter-Repo). Die Fotos darin sind **frei lizenzierte Aufnahmen aus Wikimedia Commons**, nur CC0, gemeinfrei oder CC BY (kein CC BY-SA, das würde auch für unsere Bildschirmfotos gelten), und **ohne erkennbare Personen** (Recht am eigenen Bild). Urheber und Lizenz stehen im **Impressum unter „Bildnachweis“**. Wer ein Foto austauscht, muss diesen Nachweis anpassen.
 
-So entstehen sie neu (z. B. nach Änderungen am Aussehen von Imagiter):
-1. `python werkzeuge/beispielfotos_zeichnen.py <Ordner>` zeichnet sechs SVG-Bilder (Hochzeit, Torte, Chiemsee, Berge, Auto, Gartenfest). Mit Edge in PNG umwandeln (1200 × 900).
-2. Eine Kopie der Beispiel-Zeitreise anlegen und die PNGs als `fotos` der Jahre eintragen (1985: Hochzeit, Torte · 1986: See, Berge · 1987: Auto, Gartenfest).
-3. Vorschau und Studio dieser Kopie auf **eigenen Ports** starten und mit einem **eigenen** unsichtbaren Edge fotografieren (nicht der gemeinsame Testbrowser): Jahresseite 1985, Trailer (1985 mit Fotos), Quiz nach richtiger Antwort, Studio mit Seitenvorschau (1600 px breit), Jahresseite 1986 in Handy-Breite.
-4. Als WebP (Qualität ca. 0,84, höchstens 1440 bzw. 1600 px breit) nach `bilder/` speichern.
+| Jahr | Foto | Lizenz |
+|---|---|---|
+| 1985 | Kirche St. Peter und Paul, Oberammergau (Jebulon) | CC0 |
+| 1985 | Zwei goldene Eheringe (Rgaudin) | CC0 |
+| 1986 | Chiemsee bei Chieming (Bananenfalter) | CC0 |
+| 1986 | „Alpine Meadow“ (Dana Hutchinson) | CC BY 3.0 |
+| 1987 | Hochzeitstorte (Leon Brooks) | gemeinfrei, in keinem Bildschirmfoto sichtbar |
+| 1987 | Lampions (Chris Phutully) | CC BY 2.0, in keinem Bildschirmfoto sichtbar |
+
+So entstehen die Bilder neu:
+1. `python -I werkzeuge/commons_suche.py <Ordner>` lädt Kandidaten (nur freie Lizenzen, Querformat) und schreibt Urheber und Lizenz in `kandidaten.json`.
+2. Eine Kopie der Beispiel-Zeitreise anlegen und die gewählten Fotos als `fotos` der Jahre eintragen.
+3. Vorschau (Port 8071) und Studio (Port 8072) dieser Kopie starten sowie einen Dateiserver für den Arbeitsordner (Port 8073). Dann `werkzeuge/aufnahmen.ps1` ausführen. Es nutzt einen **eigenen** unsichtbaren Edge (Port 9351), nicht den gemeinsamen Testbrowser, und braucht `cdp-eigen.ps1` (Kopie von `tests/browser/cdp.ps1` aus Imagiter mit Port 9351 und eigenem Profil).
+4. Das Skript speichert die Bilder als WebP (Qualität 0,84, höchstens 1440 bzw. 1600 px breit) nach `bilder/`.
 
 ## Ansehen auf dem eigenen Rechner
 
