@@ -43,6 +43,24 @@
     teile.forEach(function (t) { t.classList.add("sichtbar"); });
   }
 
+  // ---------- Bilder vergrößern (ohne JavaScript öffnet der Link einfach das Bild) ----------
+  var lupe = document.getElementById("lupe");
+  if (lupe && typeof lupe.showModal === "function") {
+    var lupeBild = document.getElementById("lupe-bild"), lupeText = document.getElementById("lupe-text");
+    document.querySelectorAll(".bild-link").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var img = a.querySelector("img"), cap = a.parentNode.querySelector("figcaption");
+        lupeBild.src = a.getAttribute("href");
+        lupeBild.alt = img ? img.alt : "";
+        lupeText.textContent = cap ? cap.textContent : "";
+        lupe.showModal();
+      });
+    });
+    document.getElementById("lupe-zu").addEventListener("click", function () { lupe.close(); });
+    lupe.addEventListener("click", function (e) { if (e.target === lupe) lupe.close(); });
+  }
+
   // ---------- Download ----------
   // Liegt neben der Seite eine download.json, wird der Knopf freigeschaltet (siehe README.md).
   // Fehlt sie oder ist die Seite lokal geöffnet, bleibt „Demnächst“ stehen.

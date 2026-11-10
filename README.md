@@ -12,13 +12,24 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `impressum.html`, `datenschutz.html` | Pflichtangaben. **Platzhalter in eckigen Klammern** müssen vor dem Veröffentlichen ersetzt sein. |
 | `404.html` | Seite für falsche Adressen |
 | `style.css` | gesamtes Aussehen; Farben für hell und dunkel stehen oben als Variablen |
-| `app.js` | Hell/Dunkel, Laufband, Einblenden, Download-Knopf |
-| `bilder/` | Favicon und später Bildschirmfotos |
+| `app.js` | Hell/Dunkel, Laufband, Einblenden, Bilder vergrößern, Download-Knopf |
+| `bilder/` | Favicon und Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
+| `werkzeuge/beispielfotos_zeichnen.py` | zeichnet die sechs „Fotos“ der Beispiel-Zeitreise (siehe unten) |
 | `CNAME` | eigene Adresse `imagiter.de` für GitHub Pages |
 | `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
 | `werkzeuge/commit_pruefung.py`, `.githooks/` | Prüfung vor jedem Commit (Kopie aus Imagiter, gleich halten) |
 
 Grundsätze: einfaches HTML/CSS/JavaScript, **nichts von fremden Servern** (keine Google-Schriften, keine Statistik, keine Cookies).
+
+## Beispielbilder
+
+Die Bildschirmfotos zeigen das **echte Programm** mit der **erfundenen** Beispiel-Zeitreise „40 Jahre Anna & Paul“ (`beispiele/hochzeitstag` im Imagiter-Repo). Echte Fotos oder Personen sind nicht dabei.
+
+So entstehen sie neu (z. B. nach Änderungen am Aussehen von Imagiter):
+1. `python werkzeuge/beispielfotos_zeichnen.py <Ordner>` zeichnet sechs SVG-Bilder (Hochzeit, Torte, Chiemsee, Berge, Auto, Gartenfest). Mit Edge in PNG umwandeln (1200 × 900).
+2. Eine Kopie der Beispiel-Zeitreise anlegen und die PNGs als `fotos` der Jahre eintragen (1985: Hochzeit, Torte · 1986: See, Berge · 1987: Auto, Gartenfest).
+3. Vorschau und Studio dieser Kopie auf **eigenen Ports** starten und mit einem **eigenen** unsichtbaren Edge fotografieren (nicht der gemeinsame Testbrowser): Jahresseite 1985, Trailer (1985 mit Fotos), Quiz nach richtiger Antwort, Studio mit Seitenvorschau (1600 px breit), Jahresseite 1986 in Handy-Breite.
+4. Als WebP (Qualität ca. 0,84, höchstens 1440 bzw. 1600 px breit) nach `bilder/` speichern.
 
 ## Ansehen auf dem eigenen Rechner
 

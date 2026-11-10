@@ -29,6 +29,7 @@
   <div class="breite">
     <a class="logo" href="#"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
     <nav aria-label="Hauptmenü">
+      <a href="#ansehen">Ansehen</a>
       <a href="#funktionen">Funktionen</a>
       <a href="#ablauf">So geht’s</a>
       <a href="#datenschutz">Datenschutz</a>
@@ -54,7 +55,7 @@
       <div>
         <div class="knoepfe">
           <a class="knopf" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>Für Windows herunterladen</a>
-          <a class="knopf zweit" href="#funktionen">Funktionen ansehen</a>
+          <a class="knopf zweit" href="#ansehen">So sieht es aus</a>
         </div>
         <ul class="merkmale">
           <li>läuft auf deinem PC</li><li>kein Konto nötig</li><li>verschlüsselt für deine Gäste</li>
@@ -62,26 +63,45 @@
       </div>
     </div>
 
-    <div class="geraet" role="img" aria-label="Beispiel einer Zeitreise: Zeitstrahl, Jahresseite 1989 mit Foto und Karten, Trailer">
-      <div class="geraet-inhalt">
-        <div class="zs"><span>1985</span><span>1986</span><span>1987</span><span>1988</span><span class="an">1989</span><span>1990</span><span>1991</span><span>1992</span><span>1993</span><span>1994</span></div>
-        <div class="jahrseite">
-          <div class="jahr-gross">1989</div>
-          <div class="foto f-see"><span>Sommer am See</span></div>
-          <div class="karte"><b>Zeitgeschehen</b>Die Mauer fällt – 9. November</div>
-          <div class="karte familie"><b>Familie</b>Anna &amp; Tom ziehen nach Regensburg</div>
-        </div>
-        <div class="trailer"><span class="play" aria-hidden="true">▶</span>Trailer · Sie &amp; Er erzählen · 2:40
-          <span class="welle" aria-hidden="true"><i style="height:40%"></i><i style="height:80%;animation-delay:.1s"></i><i style="height:55%;animation-delay:.2s"></i><i style="height:100%;animation-delay:.3s"></i><i style="height:65%;animation-delay:.4s"></i><i style="height:35%;animation-delay:.5s"></i><i style="height:75%;animation-delay:.6s"></i><i style="height:50%;animation-delay:.7s"></i></span>
-        </div>
-      </div>
-    </div>
+    <figure class="geraet">
+      <img src="bilder/trailer.webp" width="1440" height="900" alt="Imagiter-Trailer: Jahresseite 1985 mit zwei Fotos als Polaroids, dem Hit des Jahres und Karten zum Zeitgeschehen" fetchpriority="high">
+    </figure>
   </section>
 
   <div class="jahrband" aria-hidden="true"><div class="jahrband-spur" id="jahrband"></div></div>
 
+  <!-- ===================== SO SIEHT ES AUS ===================== -->
+  <section class="abschnitt" id="ansehen">
+    <div class="breite">
+      <div class="abschnitt-kopf zeigen">
+        <p class="vorzeile">So sieht es aus</p>
+        <h2>Eine Zeitreise zum Durchblättern.</h2>
+        <p>Jedes Jahr wird zu einer Seite wie eine Pinnwand. Gestaltet wird sie im Studio auf deinem PC, ansehen kann man sie überall.</p>
+      </div>
+      <div class="galerie">
+        <figure class="g-jahr zeigen">
+          <a class="bild-link" href="bilder/jahresseite.webp"><img src="bilder/jahresseite.webp" width="1440" height="900" loading="lazy" alt="Jahresseite 1985: zwei Fotos als Polaroids, Hit des Jahres und drei Karten zu Welt, Unterhaltung und Familie"></a>
+          <figcaption><b>Jahresseite.</b> Fotos, der Hit des Jahres und Karten zum Zeitgeschehen, mit „Jahr anhören“ zum Vorlesen.</figcaption>
+        </figure>
+        <figure class="g-handy zeigen">
+          <a class="bild-link" href="bilder/handy.webp"><img src="bilder/handy.webp" width="780" height="1688" loading="lazy" alt="Jahresseite 1986 auf dem Handy mit Fotos vom Chiemsee und aus den Bergen"></a>
+          <figcaption><b>Auf dem Handy.</b> Gäste brauchen nur den Link.</figcaption>
+        </figure>
+        <figure class="zeigen">
+          <a class="bild-link" href="bilder/studio.webp"><img src="bilder/studio.webp" width="1600" height="900" loading="lazy" alt="Das Imagiter-Studio: Jahres-Editor mit Karten und daneben die Seitenvorschau"></a>
+          <figcaption><b>Studio.</b> Karten schreiben, Fotos anordnen und die Seite gleich daneben sehen.</figcaption>
+        </figure>
+        <figure class="zeigen">
+          <a class="bild-link" href="bilder/quiz.webp"><img src="bilder/quiz.webp" width="1440" height="900" loading="lazy" alt="Quiz: Wo haben Anna und Paul geheiratet? Die richtige Antwort Rosenheim ergibt den Buchstaben R"></a>
+          <figcaption><b>Quiz.</b> Jede richtige Antwort verrät einen Buchstaben des Passworts.</figcaption>
+        </figure>
+      </div>
+      <p class="galerie-hinweis">Alle Bilder zeigen eine erfundene Beispiel-Zeitreise. Die Fotos darin sind gezeichnet.</p>
+    </div>
+  </section>
+
   <!-- ===================== FUNKTIONEN ===================== -->
-  <section class="abschnitt" id="funktionen">
+  <section class="abschnitt eng" id="funktionen">
     <div class="breite">
       <div class="abschnitt-kopf zeigen">
         <p class="vorzeile">Funktionen</p>
@@ -207,6 +227,12 @@
     <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
   </div>
 </footer>
+
+<dialog class="lupe" id="lupe" aria-label="Bild vergrößert">
+  <button type="button" class="lupe-zu" id="lupe-zu" aria-label="Schließen">×</button>
+  <img id="lupe-bild" src="data:," alt="">
+  <p id="lupe-text"></p>
+</dialog>
 
 <script src="app.js"></script>
 </body>

@@ -114,34 +114,33 @@ main > *{ position:relative; z-index:1; }
 .merkmale{ display:flex; flex-wrap:wrap; gap:8px 20px; font-size:.92rem; color:var(--leise); padding:0; margin:18px 0 0; list-style:none; }
 .merkmale li::before{ content:"✓ "; color:var(--akzent-2); font-weight:700; }
 
-/* gezeichnete Ansicht einer Zeitreise im Filmstreifen */
-.geraet{ position:relative; overflow:hidden; border:1px solid var(--linie); border-radius:var(--radius); padding:26px 0; background:#07080d; box-shadow:var(--geraet-schatten); }
-.geraet::before,.geraet::after{ content:""; position:absolute; left:0; right:0; height:12px; background:repeating-linear-gradient(90deg, transparent 0 10px, rgba(255,255,255,.8) 10px 24px, transparent 24px 34px); opacity:.85; }
+/* echtes Bildschirmfoto im Filmstreifen */
+.geraet{ position:relative; overflow:hidden; border:1px solid var(--linie); border-radius:var(--radius); padding:26px 0; background:#07080d; box-shadow:var(--geraet-schatten); margin:0; }
+.geraet::before,.geraet::after{ content:""; position:absolute; left:0; right:0; height:12px; background:repeating-linear-gradient(90deg, transparent 0 10px, rgba(255,255,255,.8) 10px 24px, transparent 24px 34px); opacity:.85; z-index:1; }
 .geraet::before{ top:7px; } .geraet::after{ bottom:7px; }
-.geraet-inhalt{ padding:16px; display:grid; gap:14px; background:linear-gradient(180deg,#1b1d2a,#11131c); color:#f3f1ea; }
-.zs{ display:flex; gap:6px; overflow:hidden; font:600 11px var(--mono); color:#9aa0b4; }
-.zs span{ padding:4px 8px; border-radius:6px; background:rgba(255,255,255,.06); white-space:nowrap; }
-.zs span.an{ background:#ff7a45; color:#1a0b05; }
-.jahrseite{ display:grid; grid-template-columns:1.25fr 1fr; gap:10px; }
-.jahr-gross{ grid-column:1/-1; font:800 54px/1 Georgia,serif; letter-spacing:-.02em; color:#ffd8b8; }
-.foto{ border-radius:10px; position:relative; overflow:hidden; min-height:120px; grid-row:span 2; box-shadow:0 8px 24px rgba(0,0,0,.35); }
-.foto span{ position:absolute; left:8px; bottom:8px; font-size:11px; background:rgba(0,0,0,.45); padding:2px 8px; border-radius:20px; color:#fff; }
-.f-see{ background:linear-gradient(180deg,#f7c98e 0%,#ee9363 38%,#b65a5a 49%,#3f6f8f 50%,#2a4f68 72%,#1f3b4f 100%); }
-.f-see::after{ content:""; position:absolute; left:58%; top:24%; width:26px; height:26px; border-radius:50%; background:#fff1c9; box-shadow:0 0 30px 10px rgba(255,220,160,.6); }
-.karte{ border-radius:10px; padding:10px 12px; font-size:12.5px; line-height:1.35; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.08); }
-.karte b{ display:block; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#ffb38a; margin-bottom:2px; }
-.karte.familie b{ color:#7ee0c8; }
-.trailer{ display:flex; align-items:center; gap:12px; font-size:12px; color:#c9cbd6; background:rgba(255,255,255,.05); border-radius:10px; padding:8px 12px; }
-.play{ width:28px; height:28px; border-radius:50%; background:#ff7a45; color:#1a0b05; display:grid; place-items:center; font-size:11px; flex:none; }
-.welle{ display:flex; align-items:center; gap:2px; height:20px; margin-left:auto; }
-.welle i{ width:3px; border-radius:2px; background:#ffb38a; opacity:.8; animation:welle 1.2s ease-in-out infinite; }
-@keyframes welle{ 50%{ transform:scaleY(.35); } }
+.geraet img{ display:block; width:100%; height:auto; }
 
 /* Laufband mit Jahreszahlen */
 .jahrband{ border-block:1px solid var(--linie); overflow:hidden; padding:14px 0; mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); }
 .jahrband-spur{ display:flex; gap:36px; width:max-content; animation:laufen 45s linear infinite; font:400 3.4rem/1 var(--titel); color:var(--jahr-farbe); }
 .jahrband-spur span:nth-child(5n){ color:transparent; background:var(--verlauf); -webkit-background-clip:text; background-clip:text; }
 @keyframes laufen{ to{ transform:translateX(-50%); } }
+
+/* ---------- 6a) So sieht es aus (Galerie) ---------- */
+.galerie{ display:grid; grid-template-columns:2fr 2fr 1.1fr; gap:18px; align-items:start; }
+.galerie figure{ margin:0; display:grid; gap:10px; align-content:start; }
+.galerie .g-jahr{ grid-column:1 / 3; } .galerie .g-handy{ grid-column:3; grid-row:1 / 3; }
+.bild-link{ display:block; border-radius:var(--radius); overflow:hidden; border:1px solid var(--linie); box-shadow:var(--schatten); background:var(--flaeche); transition:transform .2s; cursor:zoom-in; }
+.bild-link:hover{ transform:translateY(-3px); }
+.bild-link img{ display:block; width:100%; height:auto; }
+.galerie figcaption{ font-size:.95rem; color:var(--leise); }
+.galerie figcaption b{ color:var(--text); }
+.galerie-hinweis{ margin-top:22px; font-size:.88rem; color:var(--leise); }
+.lupe{ border:0; padding:0; background:transparent; max-width:min(1500px,96vw); max-height:96vh; overflow:visible; }
+.lupe::backdrop{ background:rgba(8,9,14,.84); backdrop-filter:blur(4px); }
+.lupe img{ display:block; max-width:100%; max-height:86vh; width:auto; height:auto; margin:0 auto; border-radius:var(--radius); box-shadow:0 30px 80px rgba(0,0,0,.6); }
+.lupe p{ color:#eceef5; text-align:center; margin-top:10px; font-size:.95rem; }
+.lupe-zu{ position:fixed; top:16px; right:16px; width:44px; height:44px; border-radius:999px; border:1px solid rgba(255,255,255,.3); background:rgba(0,0,0,.45); color:#fff; font-size:1.4rem; cursor:pointer; }
 
 /* ---------- 6) Funktionen (Bento-Raster) ---------- */
 .bento{ display:grid; grid-template-columns:repeat(6,1fr); gap:18px; }
@@ -227,10 +226,12 @@ main > *{ position:relative; z-index:1; }
   .abschnitt{ padding:80px 0; }
   .download-karte{ padding:28px; }
   .jahrband-spur{ font-size:2.4rem; }
+  .galerie{ grid-template-columns:1fr 1fr; }
+  .galerie .g-jahr{ grid-column:1 / -1; } .galerie .g-handy{ grid-column:2; grid-row:2 / 4; }
 }
 @media (max-width:520px){
-  .jahrseite{ grid-template-columns:1fr; }
-  .foto{ grid-row:auto; }
+  .galerie{ grid-template-columns:1fr; }
+  .galerie .g-handy{ grid-column:auto; grid-row:auto; max-width:280px; justify-self:center; }
   .kopf .knopf{ display:none; }
 }
 @media (prefers-reduced-motion:reduce){
