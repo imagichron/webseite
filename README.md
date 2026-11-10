@@ -1,0 +1,63 @@
+# Webseite imagiter.de
+
+Die öffentliche Seite, die **Imagiter** vorstellt und den Download anbietet. Hier liegt **nur die Webseite**: kein Programmcode und nichts Privates. Der Programmcode liegt in einem privaten Repo.
+
+Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell voreingestellt, mit Umschalter hell/dunkel. Hintergrund und Entscheidungen: `docs/WEBSEITE.md` im privaten Imagiter-Repo.
+
+## Dateien
+
+| Datei | Inhalt |
+|---|---|
+| `index.html` | Startseite |
+| `impressum.html`, `datenschutz.html` | Pflichtangaben. **Platzhalter in eckigen Klammern** müssen vor dem Veröffentlichen ersetzt sein. |
+| `404.html` | Seite für falsche Adressen |
+| `style.css` | gesamtes Aussehen; Farben für hell und dunkel stehen oben als Variablen |
+| `app.js` | Hell/Dunkel, Laufband, Einblenden, Download-Knopf |
+| `bilder/` | Favicon und später Bildschirmfotos |
+| `CNAME` | eigene Adresse `imagiter.de` für GitHub Pages |
+| `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
+| `werkzeuge/commit_pruefung.py`, `.githooks/` | Prüfung vor jedem Commit (Kopie aus Imagiter, gleich halten) |
+
+Grundsätze: einfaches HTML/CSS/JavaScript, **nichts von fremden Servern** (keine Google-Schriften, keine Statistik, keine Cookies).
+
+## Ansehen auf dem eigenen Rechner
+
+`index.html` doppelt anklicken. Der Download-Knopf zeigt dort immer „Demnächst“, weil der Browser bei lokal geöffneten Dateien keine `download.json` liest.
+
+## Download freischalten (wenn es eine Installationsdatei gibt)
+
+1. In diesem Repo auf GitHub ein **Release** anlegen (z. B. `v1.0.0`) und die Installationsdatei anhängen.
+2. Prüfsumme berechnen (PowerShell): `Get-FileHash .\Imagiter-Setup-1.0.0.exe -Algorithm SHA256`
+3. Neben `index.html` eine Datei `download.json` anlegen:
+
+```json
+{
+  "version": "1.0.0",
+  "datum": "1. März 2027",
+  "groesse": "85 MB",
+  "link": "https://github.com/imagiter/webseite/releases/download/v1.0.0/Imagiter-Setup-1.0.0.exe",
+  "sha256": "…"
+}
+```
+
+4. Committen und hochladen. Nach etwa einer Minute zeigt die Seite den Knopf „Für Windows herunterladen“ mit Version und Prüfsumme. Für jede neue Version nur Release und `download.json` erneuern.
+
+Die Installationsdatei muss **signiert** sein, sonst warnt oder blockiert Windows (siehe `docs/WEBSEITE.md`).
+
+## Veröffentlichen mit GitHub Pages und imagiter.de
+
+1. Repo auf GitHub: **Settings → Pages** → „Deploy from a branch“, Zweig `main`, Ordner `/ (root)`.
+2. **Custom domain:** `imagiter.de` (steht schon in `CNAME`).
+3. Beim Domain-Anbieter im **DNS** eintragen:
+   - `A`-Einträge für `imagiter.de`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `AAAA`-Einträge: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+   - `CNAME` für `www`: `imagiter.github.io`
+4. Empfohlen: Domain in der Organisation bestätigen (**Organisation → Settings → Pages → Add a domain**, TXT-Eintrag im DNS). So kann niemand sonst imagiter.de auf GitHub verwenden.
+5. Sobald GitHub das Zertifikat erstellt hat: **„Enforce HTTPS“** anhaken.
+
+## Commits
+
+Einmal je Kopie: `git config core.hooksPath .githooks`. Nie `--no-verify`.
+Dieses Repo ist **öffentlich**: Als Commit-E-Mail ist die anonyme GitHub-Adresse eingestellt (`git config user.email`), damit keine private E-Mail-Adresse sichtbar wird.
+
+Vor einem späteren **Verkauf** zieht die Seite zu Cloudflare Pages um (GitHub Pages ist nicht für Verkaufsseiten gedacht). Dafür ändert man nur die DNS-Einträge, die Dateien bleiben gleich.

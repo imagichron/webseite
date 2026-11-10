@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de" data-modus="hell">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz · Imagiter</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
+<script>
+(function () { // Modus vor dem Zeichnen setzen: hell voreingestellt, dunkel nur nach eigener Wahl
+  var m = null;
+  try { m = localStorage.getItem("imagiter-webseite-modus"); } catch (e) {}
+  document.documentElement.dataset.modus = m === "dunkel" ? "dunkel" : "hell";
+})();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="kopf">
+  <div class="breite">
+    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
+    <nav aria-label="Hauptmenü">
+      <a href="index.html#funktionen">Funktionen</a>
+      <a href="index.html#ablauf">So geht’s</a>
+      <a href="index.html#datenschutz">Datenschutz</a>
+      <a href="index.html#fragen">Fragen</a>
+    </nav>
+    <button type="button" class="modus-knopf" id="modus-knopf" aria-label="Zu dunklem Design wechseln">
+      <svg class="sonne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="mond" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </button>
+    <a class="knopf klein" href="index.html#download">Download</a>
+  </div>
+</header>
+<main id="inhalt">
+  <div class="leuchten" aria-hidden="true"></div>
+  <article class="breite"><div class="rechtstext">
+<h1>Datenschutz</h1>
+<p>Kurz gesagt: Diese Seite setzt <strong>keine Cookies</strong>, nutzt <strong>keine Statistik- oder Werbedienste</strong> und lädt <strong>keine Inhalte von fremden Servern</strong> (auch keine Schriften). Es gibt kein Kontaktformular und kein Benutzerkonto.</p>
+
+<h2>Verantwortlich</h2>
+<address>
+Mario Glaser<br>
+<span class="platzhalter">[Anschrift folgt vor der Veröffentlichung]</span><br>
+E-Mail: <a href="mailto:kontakt@imagiter.de">kontakt@imagiter.de</a>
+</address>
+
+<h2>Bereitstellung der Seite (Hosting)</h2>
+<p>Diese Seite wird über <strong>GitHub Pages</strong> ausgeliefert. Anbieter ist die GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Seite verarbeitet GitHub technisch notwendige Daten, insbesondere deine <strong>IP-Adresse</strong>, Datum und Uhrzeit, die aufgerufene Seite und Angaben zu Browser und Betriebssystem. Das ist nötig, um die Seite auszuliefern und sie gegen Angriffe zu schützen.</p>
+<p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und funktionierenden Webseite). Dabei können Daten in die USA übermittelt werden. GitHub ist nach dem EU-US Data Privacy Framework zertifiziert; dafür besteht ein Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Mehr dazu in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Datenschutzerklärung von GitHub</a>.</p>
+
+<h2>Download</h2>
+<p>Die Installationsdatei liegt ebenfalls bei GitHub. Wenn du sie herunterlädst, verarbeitet GitHub dieselben technischen Daten wie oben beschrieben.</p>
+
+<h2>Hell oder dunkel</h2>
+<p>Wenn du oben rechts auf ☀/☾ klickst, merkt sich dein Browser deine Wahl („hell“ oder „dunkel“) im lokalen Speicher deines Geräts. Diese Angabe wird nicht übertragen, und du kannst sie jederzeit über die Einstellungen deines Browsers löschen. Sie wird nur gespeichert, weil du die Funktion ausdrücklich nutzt (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
+
+<h2>Kontakt per E-Mail</h2>
+<p>Wenn du mir eine E-Mail schreibst, verwende ich deine Angaben nur, um deine Anfrage zu beantworten (Art. 6 Abs. 1 lit. b bzw. f DSGVO). Ich lösche sie, sobald sie dafür nicht mehr nötig sind und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf</p>
+<ul>
+  <li>Auskunft über die gespeicherten Daten (Art. 15 DSGVO),</li>
+  <li>Berichtigung (Art. 16), Löschung (Art. 17) und Einschränkung der Verarbeitung (Art. 18),</li>
+  <li>Datenübertragbarkeit (Art. 20) und Widerspruch gegen die Verarbeitung (Art. 21),</li>
+  <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde (Art. 77), zum Beispiel der deines Wohnorts.</li>
+</ul>
+<p>Für Anfragen genügt eine E-Mail an die oben genannte Adresse.</p>
+
+<p class="leise" style="margin-top:40px">Stand: November 2026</p>
+  </div></article>
+</main>
+<footer class="fuss">
+  <div class="breite">
+    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
+    <span>© 2026 Imagiter</span>
+    <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

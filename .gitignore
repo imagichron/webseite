@@ -1,0 +1,5 @@
+Thumbs.db
+.DS_Store
+*.tmp
+# Notizzettel mit den Impressumsangaben (stehen schon in impressum.html)
+impressum.txt

@@ -1,0 +1,10 @@
+#!/bin/sh
+# Prüfung vor jedem Commit: keine Geheimnisse, keine privaten Daten (werkzeuge/commit_pruefung.py).
+# Einrichten (einmal je Kopie des Projekts):  git config core.hooksPath .githooks
+for p in python py /c/Python315/python.exe; do
+  if command -v "$p" >/dev/null 2>&1; then
+    exec "$p" -I werkzeuge/commit_pruefung.py
+  fi
+done
+echo "Commit-Prüfung: kein Python gefunden – Commit abgebrochen." >&2
+exit 1
