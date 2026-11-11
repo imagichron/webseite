@@ -97,7 +97,9 @@ main > *{ position:relative; z-index:1; }
 /* ---------- 4) Kopf ---------- */
 .kopf{ position:sticky; top:0; z-index:20; backdrop-filter:saturate(1.4) blur(14px); -webkit-backdrop-filter:saturate(1.4) blur(14px); background:color-mix(in srgb, var(--grund) 78%, transparent); border-bottom:1px solid var(--linie); }
 .kopf .breite{ display:flex; align-items:center; gap:20px; height:68px; }
-.logo{ display:flex; align-items:center; gap:10px; font-weight:750; font-size:1.18rem; text-decoration:none; letter-spacing:-.01em; }
+/* Schriftzug des Logos: Josefin Sans (SIL Open Font License, schriften/OFL-josefin-sans.txt), lokal – nichts von fremden Servern */
+@font-face{ font-family:"Josefin Sans"; src:url("schriften/josefin-sans-latin-700-normal.woff2") format("woff2"); font-weight:700; font-display:swap; }
+.logo{ display:flex; align-items:center; gap:10px; font-family:"Josefin Sans", system-ui, sans-serif; font-weight:700; font-size:1.3rem; text-decoration:none; letter-spacing:.01em; }
 .logo-zeichen{ width:34px; height:34px; flex:none; background:url("bilder/favicon.svg") center/contain no-repeat; }   /* Icon aus ../imagiter/marke (vorläufig Familie 6) */
 .kopf nav{ display:flex; gap:24px; margin-left:auto; font-size:.95rem; }
 .kopf nav a{ text-decoration:none; color:var(--leise); } .kopf nav a:hover{ color:var(--text); }

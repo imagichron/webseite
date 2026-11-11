@@ -19,6 +19,7 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `app.js` | Hell/Dunkel, Laufband, Einblenden, Bilder vergrößern, Download-Knopf |
 | `bilder/` | Favicon (`favicon.svg`, auch das Logo oben links) und `apple-touch-icon.png` – beide aus `marke/` im Imagichron-Repo (`werkzeuge/icons_bauen.py`), dort ändern und hierher kopieren; Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
 | `werkzeuge/commons_suche.py`, `werkzeuge/aufnahmen.ps1` | freie Fotos suchen und Bildschirmfotos aufnehmen (siehe unten) |
+| `schriften/` | Josefin Sans für den Logo-Schriftzug (SIL Open Font License, Lizenztext liegt bei) – aus `marke/schrift/` im Imagichron-Repo |
 | `CNAME` | eigene Adresse `imagichron.de` für GitHub Pages |
 | `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
 | `werkzeuge/commit_pruefung.py`, `.githooks/` | Prüfung vor jedem Commit (Kopie aus Imagichron, gleich halten) |
