@@ -98,10 +98,7 @@ main > *{ position:relative; z-index:1; }
 .kopf{ position:sticky; top:0; z-index:20; backdrop-filter:saturate(1.4) blur(14px); -webkit-backdrop-filter:saturate(1.4) blur(14px); background:color-mix(in srgb, var(--grund) 78%, transparent); border-bottom:1px solid var(--linie); }
 .kopf .breite{ display:flex; align-items:center; gap:20px; height:68px; }
 .logo{ display:flex; align-items:center; gap:10px; font-weight:750; font-size:1.18rem; text-decoration:none; letter-spacing:-.01em; }
-.logo-zeichen{ width:30px; height:30px; border-radius:var(--radius); background:var(--verlauf); position:relative; flex:none; }
-.logo-zeichen::before,.logo-zeichen::after{ content:""; position:absolute; background:var(--akzent-text); }
-.logo-zeichen::before{ left:13px; top:12px; width:4px; height:12px; border-radius:2px; }
-.logo-zeichen::after{ left:12px; top:5px; width:6px; height:6px; border-radius:50%; }
+.logo-zeichen{ width:34px; height:34px; flex:none; background:url("bilder/favicon.svg") center/contain no-repeat; }   /* Icon aus ../imagiter/marke (vorläufig Familie 6) */
 .kopf nav{ display:flex; gap:24px; margin-left:auto; font-size:.95rem; }
 .kopf nav a{ text-decoration:none; color:var(--leise); } .kopf nav a:hover{ color:var(--text); }
 

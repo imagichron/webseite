@@ -17,7 +17,7 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `robots.txt`, `sitemap.xml`, `llms.txt` | Für Suchmaschinen und KI-Suchen. Alle Crawler erlaubt, auch KI-Training (entschieden 11.11.2026). `sitemap.xml` enthält nur Seiten ohne `noindex`; bei Änderungen `lastmod` anpassen. `llms.txt` beschreibt Imagiter in einfachen Worten, bei neuen Funktionen oder Preisen mitpflegen. Strukturierte Daten (JSON-LD: Programm und Fragen) stehen im `<head>` von `index.html`; die Fragen dort müssen zu den sichtbaren „Fragen“ passen. |
 | `style.css` | gesamtes Aussehen; Farben für hell und dunkel stehen oben als Variablen |
 | `app.js` | Hell/Dunkel, Laufband, Einblenden, Bilder vergrößern, Download-Knopf |
-| `bilder/` | Favicon und Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
+| `bilder/` | Favicon (`favicon.svg`, auch das Logo oben links) und `apple-touch-icon.png` – beide aus `marke/` im Imagiter-Repo (`werkzeuge/icons_bauen.py`), dort ändern und hierher kopieren; Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
 | `werkzeuge/commons_suche.py`, `werkzeuge/aufnahmen.ps1` | freie Fotos suchen und Bildschirmfotos aufnehmen (siehe unten) |
 | `CNAME` | eigene Adresse `imagiter.de` für GitHub Pages |
 | `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
