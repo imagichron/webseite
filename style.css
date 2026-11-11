@@ -217,6 +217,25 @@ main > *{ position:relative; z-index:1; }
 .rechtstabelle td{ color:var(--leise); }
 .rechtstext code{ font-size:.9em; }
 .dl-bedingungen{ font-size:.9rem; margin-top:10px; }
+.rechtstext ol{ margin:0 0 14px; padding-left:22px; color:var(--leise); }
+.beta-schritte li{ margin-bottom:8px; }
+kbd{ font:600 .85em var(--mono); padding:1px 6px; border:1px solid var(--linie); border-bottom-width:2px; border-radius:4px; background:var(--flaeche); color:var(--text); }
+.befehl{ font:14px/1.5 var(--mono); background:var(--flaeche-2); border:1px solid var(--linie); border-radius:var(--radius); padding:12px 14px; overflow-x:auto; color:var(--text); margin:0 0 14px; }
+.warnung-bild{ background:#0b5cad; color:#fff; border-radius:var(--radius); padding:22px 24px; margin:0 0 18px; max-width:520px; font-size:.92rem; box-shadow:var(--schatten); }
+.rechtstext .warnung-bild p{ color:#fff; margin:0 0 10px; }
+.warnung-bild .wb-titel{ font-size:1.25rem; font-weight:600; }
+.warnung-bild .wb-link{ text-decoration:underline; font-weight:600; outline:3px solid #ffd54a; outline-offset:3px; display:inline-block; }
+.warnung-bild .wb-knopf{ display:inline-block; float:right; border:1px solid #fff; padding:4px 16px; margin:0; }
+.fragebogen{ display:grid; gap:14px; margin:0 0 20px; }
+.fragebogen fieldset{ border:1px solid var(--linie); border-radius:var(--radius); background:var(--liste-grund); padding:14px 18px 16px; margin:0; display:grid; gap:10px; }
+.fragebogen legend{ font-weight:650; padding:0 6px; color:var(--text); }
+.fragebogen label{ display:grid; gap:4px; color:var(--leise); font-size:.95rem; }
+.fragebogen input[type=text],.fragebogen select,.fragebogen textarea{ font:inherit; font-size:.98rem; color:var(--text); background:var(--flaeche); border:1px solid var(--linie); border-radius:var(--radius); padding:8px 10px; width:100%; }
+.fragebogen textarea{ resize:vertical; }
+.fragebogen .wahl{ display:grid; gap:6px; }
+.fragebogen .wahl.reihe{ grid-template-columns:repeat(5,auto); justify-content:start; gap:6px 18px; }
+.fragebogen .wahl label{ display:flex; gap:8px; align-items:center; color:var(--text); }
+.fragebogen-meldung:empty{ display:none; }
 .platzhalter{ background:color-mix(in srgb, var(--akzent) 18%, transparent); color:var(--text); padding:0 4px; border-radius:4px; }
 
 /* ---------- 13) Einblenden beim Scrollen (nur mit JavaScript) ---------- */

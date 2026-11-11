@@ -20,6 +20,35 @@
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) h.classList.add("js");
 })();
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Imagiter",
+      "url": "https://imagiter.de/",
+      "description": "Windows-Programm, das aus eigenen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Bilder-Zeitreise macht: mit Zeitstrahl, Trailer, Musik-Hinweisen und Quiz. Für runde Geburtstage, Hochzeitstage, Jubiläen und Firmenfeiern. Läuft auf dem eigenen PC, ohne Konto.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Windows 10, Windows 11",
+      "inLanguage": "de",
+      "image": "https://imagiter.de/bilder/trailer.webp",
+      "screenshot": ["https://imagiter.de/bilder/studio.webp", "https://imagiter.de/bilder/jahresseite.webp"],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "description": "Kostenlos für Zeitreisen bis 5 Jahre; Lizenzschlüssel für mehr Jahre und weitere Funktionen." },
+      "publisher": { "@type": "Organization", "name": "Imagiter", "url": "https://imagiter.de/", "email": "kontakt@imagiter.de" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Brauche ich einen eigenen Server?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Das Programm läuft auf deinem PC. Die fertige Zeitreise ist eine Webseite aus einzelnen Dateien, die du bei kostenlosen Anbietern ins Netz stellen kannst." } },
+        { "@type": "Question", "name": "Brauche ich eine KI?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Ereignisse kommen auch aus der eingebauten Jahres-Bibliothek und aus Wikipedia, oder du schreibst sie selbst. Die KI ist eine freiwillige Hilfe." } },
+        { "@type": "Question", "name": "Was sehen meine Gäste?", "acceptedAnswer": { "@type": "Answer", "text": "Einen Link. Nach dem Quiz (oder dem Passwort) sehen sie Zeitstrahl, Jahresseiten und Trailer, auf dem Handy wie am Computer." } },
+        { "@type": "Question", "name": "Kann ich Musik einbinden?", "acceptedAnswer": { "@type": "Answer", "text": "Zu jedem Jahr kannst du den Hit des Jahres nennen. Er öffnet sich bei deinem Musikdienst, so bleibt alles im Rahmen der Regeln." } }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -222,6 +251,7 @@
           <span class="abzeichen" id="dl-stand">In Entwicklung</span>
           <h2>Imagiter herunterladen</h2>
           <p class="leise" id="dl-text">Imagiter ist noch in Arbeit. Sobald die erste Version fertig ist, kannst du sie hier herunterladen.</p>
+          <p class="leise dl-bedingungen">Windows warnt beim Start des Setups? <a href="windows-warnung.html">So geht’s trotzdem</a>.</p>
           <p class="leise dl-bedingungen">Mit dem Download akzeptierst du die <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>. Was das Programm mit Daten macht: <a href="datenschutz-programm.html">Datenschutz im Programm</a>.</p>
           <div class="knoepfe">
             <a class="knopf" id="dl-knopf" aria-disabled="true" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg><span id="dl-knopf-text">Demnächst für Windows</span></a>

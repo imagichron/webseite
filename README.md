@@ -12,6 +12,9 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `impressum.html`, `datenschutz.html` | Pflichtangaben. **Platzhalter in eckigen Klammern** müssen vor dem Veröffentlichen ersetzt sein. |
 | `nutzungsbedingungen.html`, `datenschutz-programm.html` | **Erzeugt**, nicht hier ändern: Quelle in `imagiter/docs/NUTZUNGSBEDINGUNGEN-ENTWURF.md` und `DATENSCHUTZ-PROGRAMM-ENTWURF.md`, neu erzeugen mit `uv run python werkzeuge/rechtstexte.py --webseite ../imagiter-webseite` (im Imagiter-Ordner). Kopf und Fuß kommen aus `datenschutz.html`: nach Menüänderungen dort neu erzeugen. |
 | `404.html` | Seite für falsche Adressen |
+| `windows-warnung.html` | Anleitung, falls Windows (SmartScreen) beim Setup warnt; von der Download-Karte verlinkt. |
+| `beta.html`, `fragebogen.js` | Beta-Test: Anleitung und Fragebogen. Der Fragebogen öffnet das E-Mail-Programm mit den Antworten an kontakt@imagiter.de (kein fremder Dienst, die Seite sendet nichts). **Absichtlich nicht im Menü und mit `noindex`**, solange die Beta geschlossen ist: der Link geht mit der Einladung raus. Für eine offene Beta: Menüpunkt auf allen Seiten ergänzen, `noindex` entfernen und in `sitemap.xml` eintragen. |
+| `robots.txt`, `sitemap.xml`, `llms.txt` | Für Suchmaschinen und KI-Suchen. Alle Crawler erlaubt, auch KI-Training (entschieden 11.11.2026). `sitemap.xml` enthält nur Seiten ohne `noindex`; bei Änderungen `lastmod` anpassen. `llms.txt` beschreibt Imagiter in einfachen Worten, bei neuen Funktionen oder Preisen mitpflegen. Strukturierte Daten (JSON-LD: Programm und Fragen) stehen im `<head>` von `index.html`; die Fragen dort müssen zu den sichtbaren „Fragen“ passen. |
 | `style.css` | gesamtes Aussehen; Farben für hell und dunkel stehen oben als Variablen |
 | `app.js` | Hell/Dunkel, Laufband, Einblenden, Bilder vergrößern, Download-Knopf |
 | `bilder/` | Favicon und Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
