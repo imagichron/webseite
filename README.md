@@ -19,6 +19,8 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
 | `werkzeuge/commit_pruefung.py`, `.githooks/` | Prüfung vor jedem Commit (Kopie aus Imagiter, gleich halten) |
 
+**Menü auf allen Seiten gleich:** Kommt ein neuer Abschnitt oder Menüpunkt dazu, das Hauptmenü in `index.html`, `impressum.html`, `datenschutz.html` und `404.html` anpassen (Unterseiten verlinken mit `index.html#…`, die 404-Seite mit `/index.html#…`).
+
 Grundsätze: einfaches HTML/CSS/JavaScript, **nichts von fremden Servern** (keine Google-Schriften, keine Statistik, keine Cookies).
 
 ## Beispielbilder

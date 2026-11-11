@@ -150,6 +150,8 @@ main > *{ position:relative; z-index:1; }
 .kachel p{ color:var(--leise); font-size:.98rem; }
 .symbol{ width:42px; height:42px; border-radius:var(--radius); display:grid; place-items:center; background:color-mix(in srgb, var(--akzent) 14%, transparent); color:var(--akzent); }
 .symbol svg{ width:22px; height:22px; }
+.gruende{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.gruende .kachel{ min-height:0; }
 .k1{ grid-column:span 4; background:var(--k1-grund); } .k2{ grid-column:span 2; } .k3,.k4,.k5{ grid-column:span 2; }
 .k6{ grid-column:span 6; min-height:0; grid-template-columns:auto 1fr auto; align-items:center; gap:24px; }
 .mini-zs{ display:flex; align-items:flex-end; gap:6px; height:90px; margin-top:auto; }
@@ -220,6 +222,7 @@ main > *{ position:relative; z-index:1; }
   .held-text,.schutz,.download-karte{ grid-template-columns:1fr; }
   .kopf nav{ display:none; }
   .modus-knopf{ margin-left:auto; }
+  .gruende{ grid-template-columns:1fr; }
   .bento{ grid-template-columns:1fr; } .bento > *{ grid-column:auto; }
   .k6{ grid-template-columns:1fr; }
   .schritte{ grid-template-columns:1fr; gap:40px; }
