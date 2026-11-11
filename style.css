@@ -262,6 +262,10 @@ kbd{ font:600 .85em var(--mono); padding:1px 6px; border:1px solid var(--linie);
   .galerie .g-handy{ grid-column:auto; grid-row:auto; max-width:280px; justify-self:center; }
   .kopf .knopf{ display:none; }
 }
+/* Überschrift mit wechselnden Wörtern (app.js): Vorleseprogramme lesen nur „Eure Geschichte.“ */
+.vorlesen{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.wechsel{ display:inline-block; transition:opacity .45s ease, transform .45s ease; }
+.wechsel.weg{ opacity:0; transform:translateY(.18em); }
 @media (prefers-reduced-motion:reduce){
   *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
   .js .zeigen{ opacity:1; transform:none; }

@@ -30,6 +30,27 @@
     band.innerHTML = jahre.join("") + jahre.join("");
   }
 
+  // ---------- Überschrift: „Ein Leben. / Eine Ehe. / Ein Verein. / Eine Firma.“ im Wechsel ----------
+  // Wer Bewegung abgeschaltet hat, sieht fest „Eure Geschichte.“ (data-ruhig).
+  var wechsel = document.getElementById("wechsel");
+  if (wechsel) {
+    var woerter = wechsel.getAttribute("data-woerter").split("|");
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      wechsel.textContent = wechsel.getAttribute("data-ruhig");
+    } else {
+      var nr = 0;
+      setInterval(function () {
+        if (document.hidden) return;
+        wechsel.classList.add("weg");
+        setTimeout(function () {
+          nr = (nr + 1) % woerter.length;
+          wechsel.textContent = woerter[nr];
+          wechsel.classList.remove("weg");
+        }, 450);
+      }, 2800);
+    }
+  }
+
   // ---------- Einblenden beim Scrollen ----------
   var teile = document.querySelectorAll(".zeigen");
   if (html.classList.contains("js") && "IntersectionObserver" in window) {
