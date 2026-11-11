@@ -211,6 +211,12 @@ main > *{ position:relative; z-index:1; }
 .rechtstext p,.rechtstext ul,.rechtstext address{ margin:0 0 14px; color:var(--leise); font-style:normal; }
 .rechtstext address,.rechtstext strong{ color:var(--text); }
 .rechtstext ul{ padding-left:22px; }
+.rechtstabelle{ width:100%; border-collapse:collapse; margin:0 0 18px; font-size:.95rem; }
+.rechtstabelle th,.rechtstabelle td{ text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid color-mix(in srgb, var(--leise) 25%, transparent); }
+.rechtstabelle th{ color:var(--text); }
+.rechtstabelle td{ color:var(--leise); }
+.rechtstext code{ font-size:.9em; }
+.dl-bedingungen{ font-size:.9rem; margin-top:10px; }
 .platzhalter{ background:color-mix(in srgb, var(--akzent) 18%, transparent); color:var(--text); padding:0 4px; border-radius:4px; }
 
 /* ---------- 13) Einblenden beim Scrollen (nur mit JavaScript) ---------- */

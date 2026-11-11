@@ -10,6 +10,7 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 |---|---|
 | `index.html` | Startseite |
 | `impressum.html`, `datenschutz.html` | Pflichtangaben. **Platzhalter in eckigen Klammern** müssen vor dem Veröffentlichen ersetzt sein. |
+| `nutzungsbedingungen.html`, `datenschutz-programm.html` | **Erzeugt**, nicht hier ändern: Quelle in `imagiter/docs/NUTZUNGSBEDINGUNGEN-ENTWURF.md` und `DATENSCHUTZ-PROGRAMM-ENTWURF.md`, neu erzeugen mit `uv run python werkzeuge/rechtstexte.py --webseite ../imagiter-webseite` (im Imagiter-Ordner). Kopf und Fuß kommen aus `datenschutz.html`: nach Menüänderungen dort neu erzeugen. |
 | `404.html` | Seite für falsche Adressen |
 | `style.css` | gesamtes Aussehen; Farben für hell und dunkel stehen oben als Variablen |
 | `app.js` | Hell/Dunkel, Laufband, Einblenden, Bilder vergrößern, Download-Knopf |
