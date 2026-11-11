@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beta-Test und Fragebogen · Imagiter</title>
+<title>Beta-Test und Fragebogen · Imagichron</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
 <script>
 (function () { // Modus vor dem Zeichnen setzen: hell voreingestellt, dunkel nur nach eigener Wahl
   var m = null;
-  try { m = localStorage.getItem("imagiter-webseite-modus"); } catch (e) {}
+  try { m = localStorage.getItem("imagichron-webseite-modus"); } catch (e) {}
   document.documentElement.dataset.modus = m === "dunkel" ? "dunkel" : "hell";
 })();
 </script>
@@ -19,7 +19,7 @@
 <body>
 <header class="kopf">
   <div class="breite">
-    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
+    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagichron</a>
     <nav aria-label="Hauptmenü">
       <a href="index.html#warum">Warum</a>
       <a href="index.html#ansehen">Ansehen</a>
@@ -39,21 +39,21 @@
   <div class="leuchten" aria-hidden="true"></div>
   <article class="breite"><div class="rechtstext">
 <h1>Beta-Test</h1>
-<p>Danke, dass du Imagiter vor allen anderen ausprobierst! Du hilfst damit, Fehler zu finden und das Programm verständlicher zu machen. Dauer: etwa <strong>zwei bis vier Wochen</strong>, so wie es dir passt.</p>
+<p>Danke, dass du Imagichron vor allen anderen ausprobierst! Du hilfst damit, Fehler zu finden und das Programm verständlicher zu machen. Dauer: etwa <strong>zwei bis vier Wochen</strong>, so wie es dir passt.</p>
 
 <h2>So testest du</h2>
 <ol class="beta-schritte">
   <li><strong>Installieren:</strong> Den Download-Link bekommst du mit der Einladung. Warnt Windows beim Start des Setups, hilft die <a href="windows-warnung.html">Anleitung zur Windows-Warnung</a>.</li>
   <li><strong>Eine echte Zeitreise anlegen</strong>, am besten für einen Anlass, den es wirklich gibt (Geburtstag, Jubiläum …). Zum Ausprobieren reichen auch 5 Jahre. Der Assistent „Erster Entwurf“ führt durch die ersten Schritte.</li>
-  <li><strong>Eigene Fotos</strong> hinzufügen. Deine Originale bleiben unverändert, Imagiter legt verkleinerte Kopien an.</li>
+  <li><strong>Eigene Fotos</strong> hinzufügen. Deine Originale bleiben unverändert, Imagichron legt verkleinerte Kopien an.</li>
   <li><strong>Vorschau ansehen</strong>, Quiz ausprobieren und, wenn du magst, <strong>veröffentlichen</strong> und jemandem zeigen. Wie gefällt es den Gästen?</li>
   <li><strong>Notieren</strong>, wo du gestockt hast oder etwas nicht verstanden hast. Gerade die kleinen Stolperstellen sind wichtig.</li>
-  <li>Am Ende diesen <strong>Fragebogen</strong> ausfüllen. Fehler gern auch zwischendurch per E-Mail an <a href="mailto:kontakt@imagiter.de?subject=Imagiter-Beta%3A%20Fehler">kontakt@imagiter.de</a> (mit Bildschirmfoto: <kbd>Windows</kbd> + <kbd>Umschalt</kbd> + <kbd>S</kbd>).</li>
+  <li>Am Ende diesen <strong>Fragebogen</strong> ausfüllen. Fehler gern auch zwischendurch per E-Mail an <a href="mailto:kontakt@imagichron.de?subject=Imagichron-Beta%3A%20Fehler">kontakt@imagichron.de</a> (mit Bildschirmfoto: <kbd>Windows</kbd> + <kbd>Umschalt</kbd> + <kbd>S</kbd>).</li>
 </ol>
-<p>Gut zu wissen: Imagiter ist noch eine <strong>Beta-Version</strong>, Fehler sind also möglich. Sichere Fotos, an denen du hängst, wie gewohnt. Imagiter schickt nichts an uns: Was du uns mitteilen möchtest, schreibst du selbst.</p>
+<p>Gut zu wissen: Imagichron ist noch eine <strong>Beta-Version</strong>, Fehler sind also möglich. Sichere Fotos, an denen du hängst, wie gewohnt. Imagichron schickt nichts an uns: Was du uns mitteilen möchtest, schreibst du selbst.</p>
 
 <h2 id="fragebogen">Fragebogen</h2>
-<p>Alle Fragen sind freiwillig. Ein Klick auf „Antworten per E-Mail senden“ öffnet dein E-Mail-Programm mit einer fertigen Nachricht an kontakt@imagiter.de. Du siehst sie vorher und schickst sie selbst ab. <strong>Diese Webseite speichert und sendet nichts.</strong></p>
+<p>Alle Fragen sind freiwillig. Ein Klick auf „Antworten per E-Mail senden“ öffnet dein E-Mail-Programm mit einer fertigen Nachricht an kontakt@imagichron.de. Du siehst sie vorher und schickst sie selbst ab. <strong>Diese Webseite speichert und sendet nichts.</strong></p>
 
 <form id="fragebogen-form" class="fragebogen" novalidate>
   <fieldset>
@@ -62,7 +62,7 @@
     <label>Windows
       <select name="Windows"><option value="">– bitte wählen –</option><option>Windows 11</option><option>Windows 10</option><option>weiß ich nicht</option></select>
     </label>
-    <label>Für welchen Anlass hast du Imagiter benutzt? <input type="text" name="Anlass" placeholder="z. B. 60. Geburtstag, nur ausprobiert"></label>
+    <label>Für welchen Anlass hast du Imagichron benutzt? <input type="text" name="Anlass" placeholder="z. B. 60. Geburtstag, nur ausprobiert"></label>
   </fieldset>
 
   <fieldset>
@@ -111,7 +111,7 @@
   </fieldset>
 
   <fieldset>
-    <legend>8. Würdest du Imagiter weiterempfehlen?</legend>
+    <legend>8. Würdest du Imagichron weiterempfehlen?</legend>
     <div class="wahl">
       <label><input type="radio" name="Weiterempfehlen" value="ja"> ja</label>
       <label><input type="radio" name="Weiterempfehlen" value="vielleicht"> vielleicht</label>
@@ -141,17 +141,17 @@
   </div>
   <p class="leise fragebogen-meldung" id="fragebogen-meldung" role="status"></p>
   <div id="fragebogen-text-box" hidden>
-    <p class="leise">Öffnet sich kein E-Mail-Programm? Dann kopiere den Text und schicke ihn mit deinem E-Mail-Dienst (z. B. im Browser) an <strong>kontakt@imagiter.de</strong>:</p>
+    <p class="leise">Öffnet sich kein E-Mail-Programm? Dann kopiere den Text und schicke ihn mit deinem E-Mail-Dienst (z. B. im Browser) an <strong>kontakt@imagichron.de</strong>:</p>
     <textarea id="fragebogen-text" rows="10" readonly></textarea>
   </div>
 </form>
-<p class="leise">Deine Antworten nutzen wir nur, um Imagiter zu verbessern, und löschen die E-Mail, wenn wir sie nicht mehr brauchen. Mehr dazu im <a href="datenschutz.html#beta">Datenschutz</a>.</p>
+<p class="leise">Deine Antworten nutzen wir nur, um Imagichron zu verbessern, und löschen die E-Mail, wenn wir sie nicht mehr brauchen. Mehr dazu im <a href="datenschutz.html#beta">Datenschutz</a>.</p>
   </div></article>
 </main>
 <footer class="fuss">
   <div class="breite">
-    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
-    <span>© 2026 Imagiter</span>
+    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagichron</a>
+    <span>© 2026 Imagichron</span>
     <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="datenschutz-programm.html">Datenschutz im Programm</a></nav>
   </div>
 </footer>

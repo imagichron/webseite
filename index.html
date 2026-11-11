@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Imagiter – persönliche Bilder-Zeitreisen</title>
-<meta name="description" content="Imagiter macht aus deinen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Bilder-Zeitreise – mit Zeitstrahl, Trailer, Musik und Quiz. Für runde Geburtstage, Hochzeiten, Jubiläen und Firmenfeiern.">
-<link rel="canonical" href="https://imagiter.de/">
+<title>Imagichron – persönliche Bilder-Zeitreisen</title>
+<meta name="description" content="Imagichron macht aus deinen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Bilder-Zeitreise – mit Zeitstrahl, Trailer, Musik und Quiz. Für runde Geburtstage, Hochzeiten, Jubiläen und Firmenfeiern.">
+<link rel="canonical" href="https://imagichron.de/">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://imagiter.de/">
-<meta property="og:title" content="Imagiter – persönliche Bilder-Zeitreisen">
+<meta property="og:url" content="https://imagichron.de/">
+<meta property="og:title" content="Imagichron – persönliche Bilder-Zeitreisen">
 <meta property="og:description" content="Eure Geschichte. Jahr für Jahr erzählt. Aus eigenen Fotos und dem Zeitgeschehen wird eine persönliche Zeitreise.">
 <meta property="og:locale" content="de_DE">
 <link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <script>
 (function () { // Modus vor dem Zeichnen setzen: hell voreingestellt, dunkel nur nach eigener Wahl
   var m = null, h = document.documentElement;
-  try { m = localStorage.getItem("imagiter-webseite-modus"); } catch (e) {}
+  try { m = localStorage.getItem("imagichron-webseite-modus"); } catch (e) {}
   h.dataset.modus = m === "dunkel" ? "dunkel" : "hell";
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) h.classList.add("js");
 })();
@@ -27,16 +27,16 @@
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "Imagiter",
-      "url": "https://imagiter.de/",
+      "name": "Imagichron",
+      "url": "https://imagichron.de/",
       "description": "Windows-Programm, das aus eigenen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Bilder-Zeitreise macht: mit Zeitstrahl, Trailer, Musik-Hinweisen und Quiz. Für runde Geburtstage, Hochzeitstage, Jubiläen und Firmenfeiern. Läuft auf dem eigenen PC, ohne Konto.",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Windows 10, Windows 11",
       "inLanguage": "de",
-      "image": "https://imagiter.de/bilder/trailer.webp",
-      "screenshot": ["https://imagiter.de/bilder/studio.webp", "https://imagiter.de/bilder/jahresseite.webp"],
+      "image": "https://imagichron.de/bilder/trailer.webp",
+      "screenshot": ["https://imagichron.de/bilder/studio.webp", "https://imagichron.de/bilder/jahresseite.webp"],
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "description": "Kostenlos für Zeitreisen bis 5 Jahre; Lizenzschlüssel für mehr Jahre und weitere Funktionen." },
-      "publisher": { "@type": "Organization", "name": "Imagiter", "url": "https://imagiter.de/", "email": "kontakt@imagiter.de" }
+      "publisher": { "@type": "Organization", "name": "Imagichron", "url": "https://imagichron.de/", "email": "kontakt@imagichron.de" }
     },
     {
       "@type": "FAQPage",
@@ -57,7 +57,7 @@
 
 <header class="kopf">
   <div class="breite">
-    <a class="logo" href="#"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
+    <a class="logo" href="#"><span class="logo-zeichen" aria-hidden="true"></span>Imagichron</a>
     <nav aria-label="Hauptmenü">
       <a href="#warum">Warum</a>
       <a href="#ansehen">Ansehen</a>
@@ -82,7 +82,7 @@
     <div class="held-text">
       <p class="vorzeile">Bilder-Zeitreisen für Feste mit Geschichte</p>
       <h1><span class="vorlesen">Eure Geschichte.</span><span class="wechsel" id="wechsel" aria-hidden="true" data-woerter="Ein Leben.|Eine Ehe.|Ein Verein.|Eine Firma." data-ruhig="Eure Geschichte.">Ein Leben.</span><br><span class="hervor">Jahr für Jahr</span><br>erzählt.</h1>
-      <p class="unter">Imagiter macht aus deinen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Zeitreise: mit Zeitstrahl, Trailer, Musik und Quiz. Für runde Geburtstage, Hochzeiten, Jubiläen und Firmenfeiern.</p>
+      <p class="unter">Imagichron macht aus deinen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Zeitreise: mit Zeitstrahl, Trailer, Musik und Quiz. Für runde Geburtstage, Hochzeiten, Jubiläen und Firmenfeiern.</p>
       <div>
         <div class="knoepfe">
           <a class="knopf" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>Für Windows herunterladen</a>
@@ -95,7 +95,7 @@
     </div>
 
     <figure class="geraet">
-      <img src="bilder/trailer.webp" width="1440" height="900" alt="Imagiter-Trailer: Jahresseite 1985 mit zwei Fotos als Polaroids, dem Hit des Jahres und Karten zum Zeitgeschehen" fetchpriority="high">
+      <img src="bilder/trailer.webp" width="1440" height="900" alt="Imagichron-Trailer: Jahresseite 1985 mit zwei Fotos als Polaroids, dem Hit des Jahres und Karten zum Zeitgeschehen" fetchpriority="high">
     </figure>
   </section>
 
@@ -105,9 +105,9 @@
   <section class="abschnitt eng" id="warum">
     <div class="breite">
       <div class="abschnitt-kopf zeigen">
-        <p class="vorzeile">Warum Imagiter</p>
+        <p class="vorzeile">Warum Imagichron</p>
         <h2>Mehr als eine Fotoshow.</h2>
-        <p>Eine Zeitreise lebt von zwei Dingen: von euren eigenen Bildern und von dem, was damals in der Welt los war. Imagiter bringt beides zusammen und nimmt dir dabei die meiste Arbeit ab.</p>
+        <p>Eine Zeitreise lebt von zwei Dingen: von euren eigenen Bildern und von dem, was damals in der Welt los war. Imagichron bringt beides zusammen und nimmt dir dabei die meiste Arbeit ab.</p>
       </div>
       <div class="gruende">
         <article class="kachel zeigen">
@@ -128,7 +128,7 @@
         <article class="kachel zeigen">
           <div class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
           <h3>Für jeden Anlass mit Geschichte</h3>
-          <p>Geburtstag, Hochzeitstag, Abitur-Jubiläum, Vereinsjubiläum oder 25 Jahre Firma: Imagiter passt überall, wo man auf Jahre zurückblickt. Bei Firmenfeiern zeigt die Zeitreise, wie sich das Unternehmen entwickelt hat und was gleichzeitig in der Welt geschah. Ein Rückblick, der Mitarbeitern und Gästen gleichermaßen Spaß macht.</p>
+          <p>Geburtstag, Hochzeitstag, Abitur-Jubiläum, Vereinsjubiläum oder 25 Jahre Firma: Imagichron passt überall, wo man auf Jahre zurückblickt. Bei Firmenfeiern zeigt die Zeitreise, wie sich das Unternehmen entwickelt hat und was gleichzeitig in der Welt geschah. Ein Rückblick, der Mitarbeitern und Gästen gleichermaßen Spaß macht.</p>
         </article>
       </div>
     </div>
@@ -152,7 +152,7 @@
           <figcaption><b>Auf dem Handy.</b> Gäste brauchen nur den Link.</figcaption>
         </figure>
         <figure class="zeigen">
-          <a class="bild-link" href="bilder/studio.webp"><img src="bilder/studio.webp" width="1600" height="900" loading="lazy" alt="Das Imagiter-Studio: Jahres-Editor mit Karten und daneben die Seitenvorschau"></a>
+          <a class="bild-link" href="bilder/studio.webp"><img src="bilder/studio.webp" width="1600" height="900" loading="lazy" alt="Das Imagichron-Studio: Jahres-Editor mit Karten und daneben die Seitenvorschau"></a>
           <figcaption><b>Studio.</b> Karten schreiben, Fotos anordnen und die Seite gleich daneben sehen.</figcaption>
         </figure>
         <figure class="zeigen">
@@ -170,7 +170,7 @@
       <div class="abschnitt-kopf zeigen">
         <p class="vorzeile">Funktionen</p>
         <h2>Alles für eine Zeitreise, die berührt.</h2>
-        <p>Du sammelst Fotos und Erinnerungen, Imagiter ergänzt das Zeitgeschehen und macht daraus eine Webseite und ein Video.</p>
+        <p>Du sammelst Fotos und Erinnerungen, Imagichron ergänzt das Zeitgeschehen und macht daraus eine Webseite und ein Video.</p>
       </div>
       <div class="bento">
         <article class="kachel k1 zeigen">
@@ -222,7 +222,7 @@
       <div class="schritte">
         <div class="schritt zeigen"><h3>Anlass und Zeitraum wählen</h3><p>Zum Beispiel „40 Jahre verheiratet, 1985 bis 2025, Bayern“. Ein Assistent fragt nach Personen, Orten und Themen.</p></div>
         <div class="schritt zeigen"><h3>Fotos und Karten sammeln</h3><p>Eigene Fotos je Jahr dazu, Ereignisse aus der Jahres-Bibliothek, aus Wikipedia oder von einer KI. Du prüfst und ordnest alles.</p></div>
-        <div class="schritt zeigen"><h3>Veröffentlichen und teilen</h3><p>Imagiter baut eine verschlüsselte Webseite, die du kostenlos ins Netz stellen kannst. Dazu ein Quiz als Zugang und auf Wunsch ein Video.</p></div>
+        <div class="schritt zeigen"><h3>Veröffentlichen und teilen</h3><p>Imagichron baut eine verschlüsselte Webseite, die du kostenlos ins Netz stellen kannst. Dazu ein Quiz als Zugang und auf Wunsch ein Video.</p></div>
       </div>
     </div>
   </section>
@@ -233,7 +233,7 @@
       <div class="abschnitt-kopf zeigen">
         <p class="vorzeile">Datenschutz</p>
         <h2>Deine Erinnerungen bleiben deine.</h2>
-        <p>Imagiter ist kein Online-Dienst. Das Programm läuft auf deinem Rechner, und du entscheidest, was dein Gerät verlässt.</p>
+        <p>Imagichron ist kein Online-Dienst. Das Programm läuft auf deinem Rechner, und du entscheidest, was dein Gerät verlässt.</p>
       </div>
       <ul class="schutz-liste">
         <li class="zeigen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><div><b>Läuft auf deinem PC</b><span>Kein Konto und keine Daten bei uns.</span></div></li>
@@ -250,8 +250,8 @@
       <div class="download-karte zeigen">
         <div class="dl-links">
           <span class="abzeichen" id="dl-stand">In Entwicklung</span>
-          <h2>Imagiter herunterladen</h2>
-          <p class="leise" id="dl-text">Imagiter ist noch in Arbeit. Sobald die erste Version fertig ist, kannst du sie hier herunterladen.</p>
+          <h2>Imagichron herunterladen</h2>
+          <p class="leise" id="dl-text">Imagichron ist noch in Arbeit. Sobald die erste Version fertig ist, kannst du sie hier herunterladen.</p>
           <p class="leise dl-bedingungen">Windows warnt beim Start des Setups? <a href="windows-warnung.html">So geht’s trotzdem</a>.</p>
           <p class="leise dl-bedingungen">Mit dem Download akzeptierst du die <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>. Was das Programm mit Daten macht: <a href="datenschutz-programm.html">Datenschutz im Programm</a>.</p>
           <div class="knoepfe">
@@ -288,8 +288,8 @@
 
 <footer class="fuss">
   <div class="breite">
-    <a class="logo" href="#"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
-    <span>© 2026 Imagiter</span>
+    <a class="logo" href="#"><span class="logo-zeichen" aria-hidden="true"></span>Imagichron</a>
+    <span>© 2026 Imagichron</span>
     <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="datenschutz-programm.html">Datenschutz im Programm</a></nav>
   </div>
 </footer>

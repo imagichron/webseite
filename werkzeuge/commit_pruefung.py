@@ -1,7 +1,7 @@
 """Prüfung vor jedem Commit: keine Geheimnisse und keine privaten Daten in Git.
 
 Läuft automatisch über den Git-Hook `.githooks/pre-commit` (einmal einrichten: `git config core.hooksPath .githooks`).
-Gleiche Datei in Imagiter (`werkzeuge/`) und imagicoll (`tools/`) – bei Änderungen beide Kopien gleich halten.
+Gleiche Datei in Imagichron (`werkzeuge/`) und imagicoll (`tools/`) – bei Änderungen beide Kopien gleich halten.
 Nur Python-Standardbibliothek (läuft trotz Windows „Intelligenter App-Steuerung“).
 
 Geprüft wird nur, was für den Commit vorgemerkt ist (git add):

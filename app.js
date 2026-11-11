@@ -1,9 +1,9 @@
-/* Imagiter – Webseite: Hell/Dunkel, Laufband, Einblenden, Download.
+/* Imagichron – Webseite: Hell/Dunkel, Laufband, Einblenden, Download.
    Einfaches JavaScript ohne Bibliotheken. Der Modus wird schon im <head> gesetzt (kein Aufblitzen). */
 (function () {
   "use strict";
   var html = document.documentElement;
-  var SPEICHER = "imagiter-webseite-modus";
+  var SPEICHER = "imagichron-webseite-modus";
 
   // ---------- Hell/Dunkel ----------
   var knopf = document.getElementById("modus-knopf");
@@ -96,7 +96,7 @@
         dlKnopf.removeAttribute("aria-disabled");
         setzen("dl-knopf-text", "Für Windows herunterladen");
         setzen("dl-stand", "Version " + d.version);
-        setzen("dl-text", "Die aktuelle Version von Imagiter für Windows.");
+        setzen("dl-text", "Die aktuelle Version von Imagichron für Windows.");
         setzen("dl-version", d.version);
         setzen("dl-datum", d.datum);
         setzen("dl-groesse", d.groesse);

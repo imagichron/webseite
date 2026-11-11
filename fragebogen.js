@@ -3,14 +3,14 @@
    mailto-Links ab ca. 2000 Zeichen) werden stattdessen kopiert und zum Einfügen angezeigt. */
 (function () {
   "use strict";
-  var ADRESSE = "kontakt@imagiter.de", BETREFF = "Imagiter-Beta: Fragebogen", GRENZE = 1800;
+  var ADRESSE = "kontakt@imagichron.de", BETREFF = "Imagichron-Beta: Fragebogen", GRENZE = 1800;
   var form = document.getElementById("fragebogen-form");
   if (!form) return;
   var meldung = document.getElementById("fragebogen-meldung");
   var box = document.getElementById("fragebogen-text-box"), feld = document.getElementById("fragebogen-text");
 
   function text() {
-    var zeilen = ["Imagiter-Beta: Fragebogen", ""];
+    var zeilen = ["Imagichron-Beta: Fragebogen", ""];
     form.querySelectorAll("fieldset").forEach(function (fs) {
       var titel = fs.querySelector("legend").textContent.trim(), teile = [];
       fs.querySelectorAll("input[type=text], select, textarea").forEach(function (el) {

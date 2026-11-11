@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Datenschutz im Programm · Imagiter</title>
+<title>Datenschutz im Programm · Imagichron</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
 <script>
 (function () { // Modus vor dem Zeichnen setzen: hell voreingestellt, dunkel nur nach eigener Wahl
   var m = null;
-  try { m = localStorage.getItem("imagiter-webseite-modus"); } catch (e) {}
+  try { m = localStorage.getItem("imagichron-webseite-modus"); } catch (e) {}
   document.documentElement.dataset.modus = m === "dunkel" ? "dunkel" : "hell";
 })();
 </script>
@@ -19,7 +19,7 @@
 <body>
 <header class="kopf">
   <div class="breite">
-    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
+    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagichron</a>
     <nav aria-label="Hauptmenü">
       <a href="index.html#warum">Warum</a>
       <a href="index.html#ansehen">Ansehen</a>
@@ -38,31 +38,31 @@
 <main id="inhalt">
   <div class="leuchten" aria-hidden="true"></div>
   <article class="breite"><div class="rechtstext">
-<!-- Erzeugt mit imagiter/werkzeuge/rechtstexte.py. Nicht hier ändern, sondern in imagiter/docs/DATENSCHUTZ-PROGRAMM-ENTWURF.md -->
-<h1>Datenschutzhinweis zum Programm Imagiter</h1>
+<!-- Erzeugt mit imagiter/werkzeuge/rechtstexte.py. Nicht hier ändern, sondern im Projektordner imagiter/docs/DATENSCHUTZ-PROGRAMM-ENTWURF.md -->
+<h1>Datenschutzhinweis zum Programm Imagichron</h1>
 <h2>Kurz gesagt</h2>
-<ul><li><strong>Imagiter läuft auf deinem Rechner.</strong> Es gibt kein Konto, keine Anmeldung und keine Cloud.</li><li><strong>Wir erhalten keine Daten von dir.</strong> Imagiter sendet nichts an uns: keine Nutzungsstatistik, keine Fehlerberichte, keine Abfrage nach Updates. Auch der Lizenzschlüssel wird ohne Internet auf deinem Rechner geprüft.</li><li><strong>Fotos verlassen deinen Rechner nie</strong>, solange du die fertige Zeitreise nicht selbst veröffentlichst.</li><li>Ins Internet geht nur etwas, wenn <strong>du</strong> eine Funktion dafür benutzt. Was das ist, steht unten. Das Programm zeigt es dir jeweils vorher an.</li></ul>
-<p>Verantwortlich für diesen Hinweis: Mario Glaser, Gründelparkweg 5c, 08371 Glauchau, <a href="mailto:kontakt@imagiter.de">kontakt@imagiter.de</a>.</p>
+<ul><li><strong>Imagichron läuft auf deinem Rechner.</strong> Es gibt kein Konto, keine Anmeldung und keine Cloud.</li><li><strong>Wir erhalten keine Daten von dir.</strong> Imagichron sendet nichts an uns: keine Nutzungsstatistik, keine Fehlerberichte, keine Abfrage nach Updates. Auch der Lizenzschlüssel wird ohne Internet auf deinem Rechner geprüft.</li><li><strong>Fotos verlassen deinen Rechner nie</strong>, solange du die fertige Zeitreise nicht selbst veröffentlichst.</li><li>Ins Internet geht nur etwas, wenn <strong>du</strong> eine Funktion dafür benutzt. Was das ist, steht unten. Das Programm zeigt es dir jeweils vorher an.</li></ul>
+<p>Verantwortlich für diesen Hinweis: Mario Glaser, Gründelparkweg 5c, 08371 Glauchau, <a href="mailto:kontakt@imagichron.de">kontakt@imagichron.de</a>.</p>
 <h2>Wo deine Daten liegen</h2>
-<table class="rechtstabelle"><tr><th>Was</th><th>Wo (Windows)</th></tr><tr><td>Zeitreisen mit Fotos, Texten, Aufnahmen</td><td>im Ordner <code>Imagiter</code> in deinem Benutzerordner (<code>C:\Users\&lt;Name&gt;\Imagiter</code>)</td></tr><tr><td>Lizenzschlüssel, Schlüssel für Dienste (z. B. ElevenLabs)</td><td><code>%APPDATA%\Imagiter</code>, Schlüssel für Dienste verschlüsselt mit Windows (DPAPI)</td></tr><tr><td>Das Programm selbst</td><td><code>%LOCALAPPDATA%\Programs\Imagiter</code></td></tr></table>
+<table class="rechtstabelle"><tr><th>Was</th><th>Wo (Windows)</th></tr><tr><td>Zeitreisen mit Fotos, Texten, Aufnahmen</td><td>im Ordner <code>Imagichron</code> in deinem Benutzerordner (<code>C:\Users\&lt;Name&gt;\Imagichron</code>)</td></tr><tr><td>Lizenzschlüssel, Schlüssel für Dienste (z. B. ElevenLabs)</td><td><code>%APPDATA%\Imagichron</code>, Schlüssel für Dienste verschlüsselt mit Windows (DPAPI)</td></tr><tr><td>Das Programm selbst</td><td><code>%LOCALAPPDATA%\Programs\Imagichron</code></td></tr></table>
 <p>Beim Deinstallieren bleiben deine Zeitreisen und Schlüssel erhalten. Löschen kannst du sie, indem du diese Ordner entfernst.</p>
-<p><strong>Fotos:</strong> Beim Hinzufügen verkleinert Imagiter Fotos im Browser und speichert sie neu. Dabei fallen die eingebetteten Zusatzdaten weg, auch der <strong>Aufnahmeort (GPS)</strong>. Das Aufnahmedatum liest Imagiter vorher aus, um Fotos den Jahren zuzuordnen. Es bleibt nur in der Zeitreise auf deinem Rechner.</p>
+<p><strong>Fotos:</strong> Beim Hinzufügen verkleinert Imagichron Fotos im Browser und speichert sie neu. Dabei fallen die eingebetteten Zusatzdaten weg, auch der <strong>Aufnahmeort (GPS)</strong>. Das Aufnahmedatum liest Imagichron vorher aus, um Fotos den Jahren zuzuordnen. Es bleibt nur in der Zeitreise auf deinem Rechner.</p>
 <h2>Was ins Internet geht – und nur, wenn du es nutzt</h2>
-<table class="rechtstabelle"><tr><th>Funktion</th><th>Wohin</th><th>Was genau</th></tr><tr><td><strong>Bildsuche</strong>, „Bilder für alle Jahre“</td><td>Wikimedia Commons (Wikimedia Foundation, USA)</td><td>die Suchbegriffe, die du siehst und ändern kannst. Die Vorschaubilder lädt dein Browser direkt von Commons, dabei sieht Wikimedia deine IP-Adresse. Für Karten aus privaten Rubriken (z. B. Familie) wird nie gesucht.</td></tr><tr><td><strong>Ereignisse aus Wikipedia</strong>, erster Entwurf</td><td>Wikipedia (Wikimedia Foundation)</td><td>die Jahreszahl und die Sprache</td></tr><tr><td><strong>KI-Auftrag</strong>, erster Entwurf</td><td><strong>kein direkter Versand.</strong> Imagiter erstellt einen Text, den <strong>du selbst</strong> kopierst und bei einem KI-Dienst deiner Wahl einfügst (z. B. Claude, ChatGPT, Gemini, Mistral).</td><td>was im Auftrag steht: Jahre, Rubriken, öffentliche Karten. <strong>Namen aus deiner Familie werden durch Platzhalter ersetzt.</strong> Familienkarten sind nur dabei, wenn du das Häkchen „Familienkarten mitschicken“ setzt (es ist anfangs aus), auch dann nur mit Platzhaltern. <strong>Fotos gehen nie an eine KI.</strong> Du siehst den ganzen Text vor dem Kopieren.</td></tr><tr><td><strong>Stimmen von ElevenLabs</strong> (nur mit Pro und eigenem ElevenLabs-Konto)</td><td>ElevenLabs (USA/EU)</td><td>der Text der Sätze, die vertont werden sollen, und dein ElevenLabs-Schlüssel</td></tr><tr><td><strong>Musiklinks</strong></td><td>Spotify, Apple Music, YouTube Music, Amazon Music</td><td>nichts, solange niemand klickt. Ein Klick öffnet den Titel beim Musikdienst im Browser.</td></tr><tr><td><strong>Lizenz eintragen</strong></td><td>–</td><td>nichts, die Prüfung läuft ohne Internet</td></tr></table>
+<table class="rechtstabelle"><tr><th>Funktion</th><th>Wohin</th><th>Was genau</th></tr><tr><td><strong>Bildsuche</strong>, „Bilder für alle Jahre“</td><td>Wikimedia Commons (Wikimedia Foundation, USA)</td><td>die Suchbegriffe, die du siehst und ändern kannst. Die Vorschaubilder lädt dein Browser direkt von Commons, dabei sieht Wikimedia deine IP-Adresse. Für Karten aus privaten Rubriken (z. B. Familie) wird nie gesucht.</td></tr><tr><td><strong>Ereignisse aus Wikipedia</strong>, erster Entwurf</td><td>Wikipedia (Wikimedia Foundation)</td><td>die Jahreszahl und die Sprache</td></tr><tr><td><strong>KI-Auftrag</strong>, erster Entwurf</td><td><strong>kein direkter Versand.</strong> Imagichron erstellt einen Text, den <strong>du selbst</strong> kopierst und bei einem KI-Dienst deiner Wahl einfügst (z. B. Claude, ChatGPT, Gemini, Mistral).</td><td>was im Auftrag steht: Jahre, Rubriken, öffentliche Karten. <strong>Namen aus deiner Familie werden durch Platzhalter ersetzt.</strong> Familienkarten sind nur dabei, wenn du das Häkchen „Familienkarten mitschicken“ setzt (es ist anfangs aus), auch dann nur mit Platzhaltern. <strong>Fotos gehen nie an eine KI.</strong> Du siehst den ganzen Text vor dem Kopieren.</td></tr><tr><td><strong>Stimmen von ElevenLabs</strong> (nur mit Pro und eigenem ElevenLabs-Konto)</td><td>ElevenLabs (USA/EU)</td><td>der Text der Sätze, die vertont werden sollen, und dein ElevenLabs-Schlüssel</td></tr><tr><td><strong>Musiklinks</strong></td><td>Spotify, Apple Music, YouTube Music, Amazon Music</td><td>nichts, solange niemand klickt. Ein Klick öffnet den Titel beim Musikdienst im Browser.</td></tr><tr><td><strong>Lizenz eintragen</strong></td><td>–</td><td>nichts, die Prüfung läuft ohne Internet</td></tr></table>
 <p>Für diese Dienste gelten deren Datenschutzhinweise. Wir haben auf die Verarbeitung dort keinen Einfluss.</p>
 <p>Die <strong>Browser-Stimme</strong> und <strong>eigene Aufnahmen</strong> bleiben auf deinem Rechner. Ob die Browser-Stimme intern einen Online-Dienst nutzt, hängt vom Browser und vom Betriebssystem ab.</p>
 <h2>Veröffentlichen</h2>
 <ul><li>„Veröffentlichen“ erzeugt die fertige Zeitreise als <strong>Dateien auf deinem Rechner</strong>. Nichts wird automatisch hochgeladen.</li><li>Die Inhalte sind <strong>verschlüsselt</strong>. Entschlüsselt wird erst im Browser der Gäste, mit dem Passwort, das sich aus den Antworten im Quiz ergibt.</li><li>Lädst du die Dateien auf eine Webseite hoch, bist du für diese Seite verantwortlich. Die veröffentlichte Zeitreise lädt von sich aus nichts von fremden Servern nach: Schriften und Programmteile sind dabei. Nur ein Klick auf einen Musiklink öffnet den Musikdienst.</li></ul>
 <h2>Deine Rechte</h2>
-<p>Da wir über das Programm keine personenbezogenen Daten von dir erhalten, gibt es bei uns dazu nichts zu beauskunften oder zu löschen. Für Daten bei den oben genannten Diensten wendest du dich an diese. Fragen beantworten wir gern unter <a href="mailto:kontakt@imagiter.de">kontakt@imagiter.de</a>. Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+<p>Da wir über das Programm keine personenbezogenen Daten von dir erhalten, gibt es bei uns dazu nichts zu beauskunften oder zu löschen. Für Daten bei den oben genannten Diensten wendest du dich an diese. Fragen beantworten wir gern unter <a href="mailto:kontakt@imagichron.de">kontakt@imagichron.de</a>. Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
 <p>Kaufst du später einen Lizenzschlüssel, verarbeiten wir dafür Name, E-Mail-Adresse und Kaufdaten. Darüber informiert dann die Datenschutzerklärung zum Kauf.</p>
 <p class="leise" style="margin-top:40px">Stand: 11.11.2026 · Auch im Programm: Hilfe → „Nutzungsbedingungen &amp; Datenschutz“.</p>
   </div></article>
 </main>
 <footer class="fuss">
   <div class="breite">
-    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagiter</a>
-    <span>© 2026 Imagiter</span>
+    <a class="logo" href="index.html"><span class="logo-zeichen" aria-hidden="true"></span>Imagichron</a>
+    <span>© 2026 Imagichron</span>
     <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="datenschutz-programm.html">Datenschutz im Programm</a></nav>
   </div>
 </footer>

@@ -1,23 +1,23 @@
-# Imagiter
+# Imagichron
 
-> Imagiter ist ein Windows-Programm, das aus eigenen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Bilder-Zeitreise macht: mit Zeitstrahl, Jahresseiten, Trailer, Musik-Hinweisen und einem Quiz als Zugang. Gedacht für runde Geburtstage, Hochzeitstage, Jubiläen, Klassentreffen und Firmenfeiern. Sprache: Deutsch.
+> Imagichron ist ein Windows-Programm, das aus eigenen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Bilder-Zeitreise macht: mit Zeitstrahl, Jahresseiten, Trailer, Musik-Hinweisen und einem Quiz als Zugang. Gedacht für runde Geburtstage, Hochzeitstage, Jubiläen, Klassentreffen und Firmenfeiern. Sprache: Deutsch.
 
 Wichtige Fakten:
 
 - **Läuft auf dem eigenen PC** (Windows 10 und 11, 64 Bit). Kein Konto, keine Cloud, keine Nutzungsstatistik.
 - **Ergebnis:** eine fertige Zeitreise als Webseite aus einzelnen Dateien. Sie ist verschlüsselt und wird erst im Browser der Gäste mit dem Passwort aus dem Quiz entschlüsselt. Man kann sie bei kostenlosen Anbietern ins Netz stellen. Auf Wunsch gibt es zusätzlich ein Video.
 - **Pro Jahr:** eigene Fotos, Karten zum Zeitgeschehen (aus der eingebauten Jahres-Bibliothek, aus Wikipedia oder selbst geschrieben), der Hit des Jahres als Link zum eigenen Musikdienst und kurze Sätze zum Vorlesen.
-- **KI ist freiwillig.** Imagiter erstellt einen Auftrag, den man selbst bei einem KI-Dienst eigener Wahl einfügt. An die KI gehen keine Fotos, Namen aus der Familie werden durch Platzhalter ersetzt.
+- **KI ist freiwillig.** Imagichron erstellt einen Auftrag, den man selbst bei einem KI-Dienst eigener Wahl einfügt. An die KI gehen keine Fotos, Namen aus der Familie werden durch Platzhalter ersetzt.
 - **Kosten:** kostenlos für Zeitreisen bis 5 Jahre, auch gewerblich. Für längere Zeitreisen und weitere Funktionen gibt es Lizenzschlüssel.
 - **Stand:** in Entwicklung, eine Beta-Phase läuft (November 2026).
 
 ## Seiten
 
-- [Startseite](https://imagiter.de/): Funktionen, Beispielbilder, Ablauf, Datenschutz, Download
-- [Windows-Warnung beim Installieren](https://imagiter.de/windows-warnung.html): warum Windows warnt und wie man die Installation startet
-- [Nutzungsbedingungen](https://imagiter.de/nutzungsbedingungen.html)
-- [Datenschutz im Programm](https://imagiter.de/datenschutz-programm.html): was das Programm ins Internet schickt (nur auf eigenen Wunsch)
+- [Startseite](https://imagichron.de/): Funktionen, Beispielbilder, Ablauf, Datenschutz, Download
+- [Windows-Warnung beim Installieren](https://imagichron.de/windows-warnung.html): warum Windows warnt und wie man die Installation startet
+- [Nutzungsbedingungen](https://imagichron.de/nutzungsbedingungen.html)
+- [Datenschutz im Programm](https://imagichron.de/datenschutz-programm.html): was das Programm ins Internet schickt (nur auf eigenen Wunsch)
 
 ## Kontakt
 
-- kontakt@imagiter.de
+- kontakt@imagichron.de
