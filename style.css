@@ -101,6 +101,11 @@ main > *{ position:relative; z-index:1; }
 @font-face{ font-family:"Josefin Sans"; src:url("schriften/josefin-sans-latin-700-normal.woff2") format("woff2"); font-weight:700; font-display:swap; }
 .logo{ display:flex; align-items:center; gap:10px; font-family:"Josefin Sans", system-ui, sans-serif; font-weight:700; font-size:1.3rem; text-decoration:none; letter-spacing:.01em; }
 .logo-zeichen{ width:34px; height:34px; flex:none; background:url("bilder/favicon.svg") center/contain no-repeat; }   /* Icon aus ../imagiter/marke („Porträt mit Zeitstrahl“) */
+.logo-wort{ position:relative; letter-spacing:0; }
+.logo-chron{ background:linear-gradient(90deg,#c9460b,#e8590c); -webkit-background-clip:text; background-clip:text; color:transparent; }   /* „chron“ in Bernstein – Endbild der Zauberstab-Animation (zauberstab.js) */
+.logo-wort.zauber-vorher .logo-chron{ background:none; color:inherit; }
+.logo-wort.zaubert, .logo-wort.zaubert .logo-chron{ color:transparent; background:none; }
+.zauber-flaeche{ position:absolute; pointer-events:none; }
 .kopf nav{ display:flex; gap:24px; margin-left:auto; font-size:.95rem; }
 .kopf nav a{ text-decoration:none; color:var(--leise); } .kopf nav a:hover{ color:var(--text); }
 
