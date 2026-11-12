@@ -62,7 +62,7 @@ So entstehen die Bilder neu:
   "version": "1.0.0",
   "datum": "1. März 2027",
   "groesse": "85 MB",
-  "link": "https://github.com/imagiter/webseite/releases/download/v1.0.0/Imagichron-Setup-1.0.0.exe",
+  "link": "https://github.com/imagichron/webseite/releases/download/v1.0.0/Imagichron-Setup-1.0.0.exe",
   "sha256": "…"
 }
 ```

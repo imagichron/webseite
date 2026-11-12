@@ -1,5 +1,5 @@
 /* =====================================================================
-   Imagichron – Webseite (Design „E“: Mischung aus Nachtlicht und Zeitstrahl)
+   Imagichron – Webseite (Design „E“: Mischung aus Nachtlicht und Zeitstrahl, Farben Bernstein wie das Icon)
    Hell ist voreingestellt, dunkel über den Knopf ☀/☾ (data-modus am <html>).
    Lädt nichts von fremden Servern: nur Systemschriften, keine Bibliotheken.
    ===================================================================== */
@@ -14,42 +14,42 @@
 
   /* hell (Voreinstellung) */
   --grund:#f4efe6; --flaeche:#fffdf9; --flaeche-2:#ece4d6; --text:#141210; --leise:#4a4540; --linie:rgba(20,18,16,.14);
-  --akzent:#c2410c; --akzent-2:#7e22ce; --akzent-text:#ffffff;
-  --verlauf:linear-gradient(100deg,#c2410c 0%,#be185d 50%,#7e22ce 100%);
+  --akzent:#b4380a; --akzent-2:#92400e; --akzent-text:#ffffff;
+  --verlauf:linear-gradient(100deg,#b4380a 0%,#d24a0c 50%,#b45309 100%);
   --schatten:0 0 0 1px var(--linie), 0 20px 50px rgba(60,40,20,.12);
   --raster:rgba(20,18,16,.045);
-  --leuchten:radial-gradient(700px 420px at 75% 22%, rgba(255,130,80,.22), transparent 70%), radial-gradient(560px 380px at 92% 50%, rgba(192,132,252,.22), transparent 70%), radial-gradient(520px 320px at 10% 8%, rgba(80,120,255,.10), transparent 70%);
+  --leuchten:radial-gradient(700px 420px at 75% 22%, rgba(245,130,30,.22), transparent 70%), radial-gradient(560px 380px at 92% 50%, rgba(245,158,11,.22), transparent 70%), radial-gradient(520px 320px at 10% 8%, rgba(180,56,10,.08), transparent 70%);
   --vorzeile-linie:rgba(20,18,16,.8);
-  --knopf-schatten:0 8px 24px rgba(190,24,93,.25);
+  --knopf-schatten:0 8px 24px rgba(180,56,10,.25);
   --zweit-grund:rgba(255,255,255,.6); --zweit-rand:rgba(20,18,16,.25);
-  --geraet-schatten:0 0 0 1px var(--linie), 0 0 70px rgba(255,106,91,.18), 0 24px 60px rgba(60,40,20,.28);
+  --geraet-schatten:0 0 0 1px var(--linie), 0 0 70px rgba(232,89,12,.18), 0 24px 60px rgba(60,40,20,.28);
   --jahr-farbe:rgba(20,18,16,.22);
   --kachel-grund:linear-gradient(180deg,#fffdf9,#faf5ec);
-  --kachel-glanz:rgba(255,122,69,.12);
-  --k1-grund:radial-gradient(500px 260px at 85% 110%, rgba(255,110,80,.16), transparent 70%), #fffdf9;
+  --kachel-glanz:rgba(232,89,12,.12);
+  --k1-grund:radial-gradient(500px 260px at 85% 110%, rgba(232,89,12,.16), transparent 70%), #fffdf9;
   --schritt-linie:rgba(20,18,16,.2);
   --liste-grund:#fffdf9;
-  --dl-glanz:rgba(255,110,80,.14);
+  --dl-glanz:rgba(232,89,12,.14);
   color-scheme:light;
 }
 [data-modus="dunkel"]{
   --grund:#0a0c12; --flaeche:#12151f; --flaeche-2:#1a1e2c; --text:#eceef5; --leise:#a3a9bc; --linie:rgba(255,255,255,.11);
-  --akzent:#ff7a45; --akzent-2:#c084fc; --akzent-text:#14080a;
-  --verlauf:linear-gradient(100deg,#ffb36b 0%,#ff6a5b 45%,#c084fc 100%);
+  --akzent:#ff8a3d; --akzent-2:#fbbf24; --akzent-text:#14080a;
+  --verlauf:linear-gradient(100deg,#e8590c 0%,#ff8a3d 45%,#fbbf24 100%);
   --schatten:0 0 0 1px var(--linie), 0 30px 80px rgba(0,0,0,.5);
   --raster:rgba(255,255,255,.035);
-  --leuchten:radial-gradient(700px 420px at 75% 22%, rgba(255,110,80,.30), transparent 70%), radial-gradient(560px 380px at 92% 50%, rgba(192,132,252,.26), transparent 70%), radial-gradient(520px 320px at 10% 8%, rgba(80,120,255,.14), transparent 70%);
+  --leuchten:radial-gradient(700px 420px at 75% 22%, rgba(232,89,12,.30), transparent 70%), radial-gradient(560px 380px at 92% 50%, rgba(245,158,11,.26), transparent 70%), radial-gradient(520px 320px at 10% 8%, rgba(245,158,11,.10), transparent 70%);
   --vorzeile-linie:rgba(255,255,255,.7);
-  --knopf-schatten:0 8px 30px rgba(255,106,91,.35);
+  --knopf-schatten:0 8px 30px rgba(232,89,12,.35);
   --zweit-grund:rgba(255,255,255,.04); --zweit-rand:rgba(255,255,255,.25);
-  --geraet-schatten:0 0 0 1px var(--linie), 0 0 90px rgba(255,106,91,.22), 0 30px 80px rgba(0,0,0,.6);
+  --geraet-schatten:0 0 0 1px var(--linie), 0 0 90px rgba(232,89,12,.22), 0 30px 80px rgba(0,0,0,.6);
   --jahr-farbe:rgba(236,238,245,.28);
   --kachel-grund:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
-  --kachel-glanz:rgba(255,122,69,.18);
-  --k1-grund:radial-gradient(500px 260px at 85% 110%, rgba(255,110,80,.25), transparent 70%), linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
+  --kachel-glanz:rgba(232,89,12,.18);
+  --k1-grund:radial-gradient(500px 260px at 85% 110%, rgba(232,89,12,.25), transparent 70%), linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
   --schritt-linie:rgba(255,255,255,.18);
   --liste-grund:rgba(255,255,255,.03);
-  --dl-glanz:rgba(255,110,80,.22);
+  --dl-glanz:rgba(232,89,12,.22);
   color-scheme:dark;
 }
 
@@ -100,7 +100,7 @@ main > *{ position:relative; z-index:1; }
 /* Schriftzug des Logos: Josefin Sans (SIL Open Font License, schriften/OFL-josefin-sans.txt), lokal – nichts von fremden Servern */
 @font-face{ font-family:"Josefin Sans"; src:url("schriften/josefin-sans-latin-700-normal.woff2") format("woff2"); font-weight:700; font-display:swap; }
 .logo{ display:flex; align-items:center; gap:10px; font-family:"Josefin Sans", system-ui, sans-serif; font-weight:700; font-size:1.3rem; text-decoration:none; letter-spacing:.01em; }
-.logo-zeichen{ width:34px; height:34px; flex:none; background:url("bilder/favicon.svg") center/contain no-repeat; }   /* Icon aus ../imagiter/marke (vorläufig Familie 6) */
+.logo-zeichen{ width:34px; height:34px; flex:none; background:url("bilder/favicon.svg") center/contain no-repeat; }   /* Icon aus ../imagiter/marke („Porträt mit Zeitstrahl“) */
 .kopf nav{ display:flex; gap:24px; margin-left:auto; font-size:.95rem; }
 .kopf nav a{ text-decoration:none; color:var(--leise); } .kopf nav a:hover{ color:var(--text); }
 
@@ -169,7 +169,7 @@ main > *{ position:relative; z-index:1; }
 .schritte{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; counter-reset:schritt; }
 .schritt{ display:grid; gap:12px; padding-top:22px; border-top:3px solid var(--schritt-linie); position:relative; }
 .schritt::before{ counter-increment:schritt; content:counter(schritt,decimal-leading-zero); font:400 2.6rem/1 var(--titel); color:var(--text); }
-.schritt::after{ content:""; position:absolute; top:-12px; left:0; width:20px; height:20px; border-radius:50%; background:var(--verlauf); box-shadow:0 0 16px rgba(255,106,91,.7); }
+.schritt::after{ content:""; position:absolute; top:-12px; left:0; width:20px; height:20px; border-radius:50%; background:var(--verlauf); box-shadow:0 0 16px rgba(232,89,12,.7); }
 .schritt p{ color:var(--leise); }
 
 /* ---------- 8) Datenschutz ---------- */
