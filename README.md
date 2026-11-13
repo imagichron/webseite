@@ -21,7 +21,9 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `werkzeuge/commons_suche.py`, `werkzeuge/aufnahmen.ps1` | freie Fotos suchen und Bildschirmfotos aufnehmen (siehe unten) |
 | `schriften/` | Josefin Sans für den Logo-Schriftzug (SIL Open Font License, Lizenztext liegt bei) – aus `marke/schrift/` im Imagichron-Repo |
 | `CNAME` | eigene Adresse `imagichron.de` für GitHub Pages |
-| `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus |
+| `_config.yml` | GitHub Pages (Jekyll) kopiert die Dateien unverändert, lässt aber `README.md` und `werkzeuge/` weg (interne Dateien nicht veröffentlichen) |
+| `modus.js` | setzt Hell/Dunkel vor dem Zeichnen (eigene Datei, weil die Seiten per Content-Security-Policy nur Skripte aus eigenen Dateien erlauben) |
+| `bilder/teilen.jpg` | Vorschaubild beim Teilen des Links (WhatsApp, Facebook; 1200 × 630) |
 | `werkzeuge/commit_pruefung.py`, `.githooks/` | Prüfung vor jedem Commit (Kopie aus Imagichron, gleich halten) |
 
 **Menü auf allen Seiten gleich:** Kommt ein neuer Abschnitt oder Menüpunkt dazu, das Hauptmenü in `index.html`, `impressum.html`, `datenschutz.html` und `404.html` anpassen (Unterseiten verlinken mit `index.html#…`, die 404-Seite mit `/index.html#…`).

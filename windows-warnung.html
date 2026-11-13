@@ -3,18 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>Windows-Warnung beim Installieren · Imagichron</title>
 <meta name="description" content="Warum Windows beim Setup von Imagichron warnt (SmartScreen: „Der Computer wurde durch Windows geschützt“) und wie du die Installation sicher startest.">
 <link rel="canonical" href="https://imagichron.de/windows-warnung.html">
 <link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
-<script>
-(function () { // Modus vor dem Zeichnen setzen: hell voreingestellt, dunkel nur nach eigener Wahl
-  var m = null;
-  try { m = localStorage.getItem("imagichron-webseite-modus"); } catch (e) {}
-  document.documentElement.dataset.modus = m === "dunkel" ? "dunkel" : "hell";
-})();
-</script>
+<script src="modus.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>

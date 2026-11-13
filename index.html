@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>Imagichron – persönliche Bilder-Zeitreisen</title>
 <meta name="description" content="Imagichron macht aus deinen Fotos und dem Zeitgeschehen jedes Jahres eine persönliche Bilder-Zeitreise – mit Zeitstrahl, Trailer, Musik und Quiz. Für runde Geburtstage, Hochzeiten, Jubiläen und Firmenfeiern.">
 <link rel="canonical" href="https://imagichron.de/">
@@ -11,16 +12,15 @@
 <meta property="og:title" content="Imagichron – persönliche Bilder-Zeitreisen">
 <meta property="og:description" content="Eure Geschichte. Jahr für Jahr erzählt. Aus eigenen Fotos und dem Zeitgeschehen wird eine persönliche Zeitreise.">
 <meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://imagichron.de/bilder/teilen.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Imagichron: Eure Geschichte. Jahr für Jahr. Daneben eine Jahresseite 1985 mit zwei Fotos und Karten zum Zeitgeschehen.">
+<meta property="og:site_name" content="Imagichron">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
-<script>
-(function () { // Modus vor dem Zeichnen setzen: hell voreingestellt, dunkel nur nach eigener Wahl
-  var m = null, h = document.documentElement;
-  try { m = localStorage.getItem("imagichron-webseite-modus"); } catch (e) {}
-  h.dataset.modus = m === "dunkel" ? "dunkel" : "hell";
-  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) h.classList.add("js");
-})();
-</script>
+<script src="modus.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

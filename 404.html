@@ -3,17 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>Seite nicht gefunden · Imagichron</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
-<script>
-(function () { // Modus vor dem Zeichnen setzen: hell voreingestellt, dunkel nur nach eigener Wahl
-  var m = null;
-  try { m = localStorage.getItem("imagichron-webseite-modus"); } catch (e) {}
-  document.documentElement.dataset.modus = m === "dunkel" ? "dunkel" : "hell";
-})();
-</script>
+<script src="/modus.js"></script>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>

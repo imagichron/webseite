@@ -1,0 +1,6 @@
+# GitHub Pages (Jekyll): Die Seite besteht aus fertigen Dateien, Jekyll kopiert sie nur.
+# Interne Dateien (Anleitung, Werkzeuge) werden nicht mit veröffentlicht; Dateien mit Punkt am Anfang ohnehin nicht.
+exclude:
+  - README.md
+  - werkzeuge
+  - impressum.txt
