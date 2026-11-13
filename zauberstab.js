@@ -1,7 +1,7 @@
 /* Logo-Animation „Zauberstab“: Das I wird zum Zauberstab, kreist über „magic“, tippt auf das g –
    „magic“ färbt sich Bernstein, die Farbe wandert zu „chron“ und bleibt dort.
    Spielt einmal beim Laden und erneut, wenn man mit der Maus auf das Logo zeigt.
-   Bei „Bewegung reduzieren“ (Systemeinstellung) bleibt das Logo still. Quelle: imagiter/docs/entwuerfe/schriftzug-animation.html */
+   Bei „Bewegung reduzieren“ (Systemeinstellung) bleibt das Logo still. Quelle: imagichron/docs/entwuerfe/schriftzug-animation.html */
 (() => {
   "use strict";
   const WORTE = { imagichron: { text: "Imagichron", farben: ["#b4380a", "#e8590c"], stern: "#f59e0b", band: "#fbbf24", teil: [5, 9] } };
@@ -45,7 +45,14 @@
     /* Buchstaben: kein Hüpfen, beim Verzaubern nur ein weiches Leuchten */
     for (let i = 0; i <= letzter; i++) {
       let alpha = 1;
-      if (i === 0) alpha = 1 - (weich(tStab) * (1 - weich(tI)));
+      if (i === 0) {
+        alpha = 1 - (weich(tStab) * (1 - weich(tI)));
+        /* Das I bleibt als Umriss (Rahmen) stehen, solange es Zauberstab ist */
+        if (alpha < 1) {
+          ctx.save(); ctx.globalAlpha = (1 - alpha) * .8; ctx.strokeStyle = TINTE; ctx.lineWidth = 3; ctx.lineJoin = "round";
+          ctx.textAlign = "center"; ctx.strokeText(text[0], mitte(0), GRUND); ctx.restore();
+        }
+      }
       if (alpha <= 0) continue;
       ctx.save(); ctx.globalAlpha = alpha;
       const marke = farbe(w.farben[0], w.farben[1], klemm((i - 1) / (letzter - 1)));
