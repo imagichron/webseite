@@ -10,7 +10,7 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 |---|---|
 | `index.html` | Startseite |
 | `impressum.html`, `datenschutz.html` | Pflichtangaben. **Platzhalter in eckigen Klammern** müssen vor dem Veröffentlichen ersetzt sein. |
-| `nutzungsbedingungen.html`, `datenschutz-programm.html` | **Erzeugt**, nicht hier ändern: Quelle in `imagiter/docs/NUTZUNGSBEDINGUNGEN-ENTWURF.md` und `DATENSCHUTZ-PROGRAMM-ENTWURF.md`, neu erzeugen mit `uv run python werkzeuge/rechtstexte.py --webseite ../imagiter-webseite` (im Imagichron-Ordner). Kopf und Fuß kommen aus `datenschutz.html`: nach Menüänderungen dort neu erzeugen. |
+| `nutzungsbedingungen.html`, `datenschutz-programm.html` | **Erzeugt**, nicht hier ändern: Quelle in `imagichron/docs/NUTZUNGSBEDINGUNGEN-ENTWURF.md` und `DATENSCHUTZ-PROGRAMM-ENTWURF.md`, neu erzeugen mit `uv run python werkzeuge/rechtstexte.py --webseite ../imagichron-webseite` (im Imagichron-Ordner). Kopf und Fuß kommen aus `datenschutz.html`: nach Menüänderungen dort neu erzeugen. |
 | `404.html` | Seite für falsche Adressen |
 | `windows-warnung.html` | Anleitung, falls Windows (SmartScreen) beim Setup warnt; von der Download-Karte verlinkt. |
 | `beta.html`, `fragebogen.js` | Beta-Test: Anleitung und Fragebogen. Der Fragebogen öffnet das E-Mail-Programm mit den Antworten an kontakt@imagichron.de (kein fremder Dienst, die Seite sendet nichts). **Absichtlich nicht im Menü und mit `noindex`**, solange die Beta geschlossen ist: der Link geht mit der Einladung raus. Für eine offene Beta: Menüpunkt auf allen Seiten ergänzen, `noindex` entfernen und in `sitemap.xml` eintragen. |

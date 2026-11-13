@@ -1,4 +1,4 @@
-﻿param([string]$Arbeit = $PSScriptRoot, [string]$Ziel = "C:\Users\mario\source\repos\imagiter-webseite\bilder")
+﻿param([string]$Arbeit = $PSScriptRoot, [string]$Ziel = (Join-Path (Split-Path $PSScriptRoot -Parent) "bilder"))
 # Bildschirmfotos für die Webseite: Vorschau (Port 8071) und Studio (Port 8072) müssen laufen,
 # dazu ein einfacher Dateiserver für den Arbeitsordner auf Port 8073. Eigener Edge (Port 9351), nicht der gemeinsame Testbrowser.
 . "$Arbeit\cdp-eigen.ps1"
