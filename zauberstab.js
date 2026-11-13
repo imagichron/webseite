@@ -1,7 +1,7 @@
 /* Logo-Animation „Zauberstab“: Das I wird zum Zauberstab, kreist über „magic“, tippt auf das g –
    „magic“ färbt sich Bernstein, die Farbe wandert zu „chron“ und bleibt dort.
    Spielt einmal beim Laden und erneut, wenn man mit der Maus auf das Logo zeigt.
-   Bei „Bewegung reduzieren“ (Systemeinstellung) bleibt das Logo still. Quelle: imagichron/docs/entwuerfe/schriftzug-animation.html */
+   Bei „Bewegung reduzieren“ (Systemeinstellung) bleibt das Logo still. Quelle: imagicosmos/docs/entwuerfe/schriftzug-animation.html */
 (() => {
   "use strict";
   const WORTE = { imagichron: { text: "Imagichron", farben: ["#b4380a", "#e8590c"], stern: "#f59e0b", band: "#fbbf24", teil: [5, 9] } };

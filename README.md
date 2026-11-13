@@ -17,9 +17,9 @@ Design „E“ (Mischung aus „Nachtlicht“ und „Zeitstrahl“), hell vorein
 | `robots.txt`, `sitemap.xml`, `llms.txt` | Für Suchmaschinen und KI-Suchen. Alle Crawler erlaubt, auch KI-Training (entschieden 11.11.2026). `sitemap.xml` enthält nur Seiten ohne `noindex`; bei Änderungen `lastmod` anpassen. `llms.txt` beschreibt Imagichron in einfachen Worten, bei neuen Funktionen oder Preisen mitpflegen. Strukturierte Daten (JSON-LD: Programm und Fragen) stehen im `<head>` von `index.html`; die Fragen dort müssen zu den sichtbaren „Fragen“ passen. |
 | `style.css` | gesamtes Aussehen; Farben für hell und dunkel stehen oben als Variablen |
 | `app.js` | Hell/Dunkel, Laufband, Einblenden, Bilder vergrößern, Download-Knopf |
-| `bilder/` | Favicon (`favicon.svg`, auch das Logo oben links) und `apple-touch-icon.png` – beide aus `marke/` im Imagichron-Repo (`werkzeuge/icons_bauen.py`), dort ändern und hierher kopieren; Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
+| `bilder/` | Favicon (`favicon.svg`, auch das Logo oben links) und `apple-touch-icon.png` – beide aus `marke/` im Dach-Ordner `imagicosmos` (erzeugt mit `werkzeuge/icons_bauen.py` in Imagichron), dort ändern und hierher kopieren; Bildschirmfotos (WebP): `trailer`, `jahresseite`, `handy`, `studio`, `quiz` |
 | `werkzeuge/commons_suche.py`, `werkzeuge/aufnahmen.ps1` | freie Fotos suchen und Bildschirmfotos aufnehmen (siehe unten) |
-| `schriften/` | Josefin Sans für den Logo-Schriftzug (SIL Open Font License, Lizenztext liegt bei) – aus `marke/schrift/` im Imagichron-Repo |
+| `schriften/` | Josefin Sans für den Logo-Schriftzug (SIL Open Font License, Lizenztext liegt bei) – aus `marke/schrift/` im Dach-Ordner `imagicosmos` |
 | `CNAME` | eigene Adresse `imagichron.de` für GitHub Pages |
 | `_config.yml` | GitHub Pages (Jekyll) kopiert die Dateien unverändert, lässt aber `README.md` und `werkzeuge/` weg (interne Dateien nicht veröffentlichen) |
 | `modus.js` | setzt Hell/Dunkel vor dem Zeichnen (eigene Datei, weil die Seiten per Content-Security-Policy nur Skripte aus eigenen Dateien erlauben) |
